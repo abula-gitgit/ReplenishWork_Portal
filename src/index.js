@@ -7,6 +7,7 @@ const URL_RPW_EN = "https://rpwen.easy-log.app/";
 const URL_RPW_FR = "https://rpwfr.easy-log.app/";
 const URL_RPW_DE = "https://rpwde.easy-log.app/";
 const URL_RPW_IT = "https://rpwit.easy-log.app/";
+const URL_RPW_ES = "https://rpwes.easy-log.app/";
 const URL_RP_PORTAL = "https://rp.easy-log.app/";
 const URL_RP_JP = "https://rpjp.easy-log.app/";
 const URL_RP_EN = "https://rpen.easy-log.app/";
@@ -45,6 +46,8 @@ const LANG_CONFIG = {
     launchDeBtn: "Deutsche App starten (Kostenlos)",
     launchItTitle: "Replenish for Work (Italiano)",
     launchItBtn: "Apri versione italiana (Gratis)",
+    launchEsTitle: "Replenish for Work (Spagnolo)",
+    launchEsBtn: "Apri versione spagnola (Gratis)",
 
     industriesBadge: "業種別プリセットですぐに使える",
     industriesTitle: "あらゆるビジネス現場の消耗品に対応",
@@ -168,6 +171,8 @@ const LANG_CONFIG = {
     launchDeBtn: "Deutsche App starten (Kostenlos)",
     launchItTitle: "Replenish for Work (Italiano)",
     launchItBtn: "Launch Italian Edition (Free)",
+    launchEsTitle: "Replenish for Work (Spanish)",
+    launchEsBtn: "Launch Spanish Edition (Free)",
 
     industriesBadge: "Ready-to-Use Industry Presets",
     industriesTitle: "Tailored for Every Workplace Environment",
@@ -504,6 +509,131 @@ const LANG_CONFIG = {
     contactTitle: "Kontakt",
     guideTitle: "Leitfaden"
   },
+  es: {
+    code: "es",
+    label: "Español",
+    flag: "🇪🇸",
+    homePath: "/es",
+    privacyPath: "/es/privacy",
+    termsPath: "/es/terms",
+    aboutPath: "/es/about",
+    contactPath: "/es/contact",
+    guidePath: "/es/guide",
+    brandTitle: "Replenish for Work",
+    brandSubtitle: "Portal de gestión inteligente de consumibles y reposición para empresas",
+    pageTitle: "Replenish for Work Portal - Gestor inteligente de consumibles e inventario | 100% Gratuito y Local",
+    pageDesc: "Optimice los ciclos de renovación y calcule los plazos de entrega para oficinas, clínicas, hostelería y talleres. Sin roturas de stock, 100% seguro en su dispositivo.",
+    heroBadge: "Cero roturas de stock y pedidos a proveedores siempre a tiempo",
+    heroTitle: 'Planifique los ciclos de consumo e inventario<br><span class="bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 bg-clip-text text-transparent">con máxima precisión y sencillez.</span>',
+    heroDesc: "Papelería de oficina, material sanitario, higiene en restauración o recambios de taller: calcule automáticamente las fechas límite de cambio y programe los pedidos con el tiempo de aviso ideal.",
+    navHome: "Inicio",
+    navIndustries: "Sectores",
+    navFeatures: "Ventajas",
+    navFaq: "Preguntas frecuentes",
+    navLaunch: "Iniciar aplicación",
+
+    launchJpTitle: "Replenish for Work (Japonés)",
+    launchJpBtn: "Versión japonesa (Gratis)",
+    launchEnTitle: "Replenish for Work (Inglés)",
+    launchEnBtn: "Versión inglesa (Gratis)",
+    launchFrTitle: "Replenish for Work (Francés)",
+    launchFrBtn: "Versión francesa (Gratis)",
+    launchDeTitle: "Replenish for Work (Alemán)",
+    launchDeBtn: "Versión alemana (Gratis)",
+    launchItTitle: "Replenish for Work (Italiano)",
+    launchItBtn: "Versión italiana (Gratis)",
+    launchEsTitle: "Replenish for Work (Español)",
+    launchEsBtn: "Abrir versión en español (Gratis)",
+
+    industriesBadge: "Plantillas sectoriales listas para usar",
+    industriesTitle: "Diseñado para cualquier entorno profesional",
+    industriesSub: "Aplique con un solo clic los ciclos y consumibles recomendados para su actividad y personalícelos a su medida.",
+
+    industries: [
+      {
+        icon: "🏢",
+        name: "Oficina y Administración",
+        desc: "Papel A4, tóner láser, aceite para destructora de documentos, filtros de agua y material de papelería",
+        tag: "Reducción de costes"
+      },
+      {
+        icon: "🏥",
+        name: "Clínica, Farmacia y Salud",
+        desc: "Guantes de nitrilo, desinfectante hidroalcohólico, bolsas de autoclave, agujas y mascarillas quirúrgicas",
+        tag: "Higiene y Seguridad"
+      },
+      {
+        icon: "🍽️",
+        name: "Hostelería, Restaurante y Bar",
+        desc: "Filtros antical para cafetera, detergente lavavajillas profesional, desinfectantes alimentarios y bobinas de papel",
+        tag: "APPCC e Higiene"
+      },
+      {
+        icon: "💇",
+        name: "Peluquería y Centro de Estética",
+        desc: "Toallas desechables, capas de tinte, guantes protectores, desinfectante para instrumental y cuchillas de afeitar",
+        tag: "Calidad de servicio"
+      },
+      {
+        icon: "🏭",
+        name: "Taller mecánico y Mantenimiento",
+        desc: "Limpiador de frenos en spray, trapos industriales, lubricantes técnicos, discos de corte y equipos de protección",
+        tag: "Cero tiempos muertos"
+      },
+      {
+        icon: "🏨",
+        name: "Hotel y Alojamiento Turístico",
+        desc: "Amenities para huéspedes, detergentes de lavandería, zapatillas de cortesía, bolsas higiénicas y filtros de aire",
+        tag: "Estándar de calidad"
+      }
+    ],
+
+    featuresBadge: "Ventajas clave",
+    featuresTitle: "Por qué los profesionales eligen Replenish for Work",
+    feat1Title: "Aviso inteligente según plazo de entrega del proveedor",
+    feat1Desc: "Comprar cuando el material ya se ha agotado interrumpe la actividad. Calculamos la fecha idónea de pedido restando el tiempo de envío de cada proveedor.",
+    feat2Title: "100% Almacenamiento local y seguro (Sin envío a la nube)",
+    feat2Desc: "Todos sus listados, precios, proveedores y notas permanecen guardados en el almacenamiento del navegador de su equipo (IndexedDB). Máxima confidencialidad.",
+    feat3Title: "Compatible PWA y funcionamiento completo sin internet",
+    feat3Desc: "Instale la herramienta como aplicación en tabletas de almacén, taller o recepción. Funciona incluso en sótanos sin conexión Wi-Fi.",
+    feat4Title: "100% Gratuito y sin registro previo",
+    feat4Desc: "Sin cuotas mensuales por usuario, sin suscripciones y sin tarjetas de crédito. Abra la herramienta y organice su centro de trabajo.",
+
+    faqBadge: "FAQ",
+    faqTitle: "Preguntas frecuentes",
+    faqs: [
+      {
+        q: "Q. ¿Están seguros los datos de inventario y costes de mi empresa?",
+        a: "Totalmente. Replenish for Work opera bajo una arquitectura estrictamente del lado del cliente: cada artículo, proveedor, coste y nota se guarda en el IndexedDB local de su navegador y nunca se envía a servidores externos."
+      },
+      {
+        q: "Q. ¿Se pueden exportar copias de seguridad o pasar los datos a otro ordenador?",
+        a: "Por supuesto. Desde el botón «Copia de seguridad» puede descargar un archivo JSON estándar y restaurarlo en cualquier otro equipo con un solo clic."
+      },
+      {
+        q: "Q. ¿Es realmente gratis para empresas?",
+        a: "Sí, es completamente gratuito, sin límite de artículos, sin módulos de pago y sin suscripciones."
+      },
+      {
+        q: "Q. ¿En qué se diferencia de la versión doméstica de Replenish?",
+        a: "La versión doméstica está orientada a despensa y hogar. Replenish for Work incluye funciones para centros de trabajo: tiempo de aviso previo (Lead Time), stock mínimo de seguridad, plantillas por sectores y control de costes y proveedores."
+      }
+    ],
+
+    ctaTitle: "Elimine las roturas de stock y el estrés de los pedidos desde hoy.",
+    ctaDesc: "Sin configuraciones complejas ni registros obligatorios. Inicie la aplicación de forma gratuita en su navegador.",
+    ctaBtn: "Comenzar con Replenish for Work",
+    familyTitle: "¿Busca un gestor para su hogar?",
+    familyDesc: "Conozca Replenish Home para controlar champús, detergentes, alimentos y consumibles domésticos de su familia.",
+    familyBtn: "Visitar el portal Replenish Home",
+
+    footerDisclaimer: "Replenish for Work es una herramienta orientada a la planificación de reposiciones y suministros de trabajo. La información se almacena únicamente en el dispositivo del usuario.",
+    privacyTitle: "Política de privacidad",
+    termsTitle: "Términos de servicio",
+    aboutTitle: "Sobre nosotros",
+    contactTitle: "Contacto",
+    guideTitle: "Guía de uso"
+  },
   it: {
     code: "it",
     label: "Italiano",
@@ -636,7 +766,8 @@ function renderHeader(lang) {
     { code: "en", path: "/en", flag: "🇺🇸", label: "EN" },
     { code: "fr", path: "/fr", flag: "🇫🇷", label: "FR" },
     { code: "de", path: "/de", flag: "🇩🇪", label: "DE" },
-    { code: "it", path: "/it", flag: "🇮🇹", label: "IT" }
+    { code: "it", path: "/it", flag: "🇮🇹", label: "IT" },
+    { code: "es", path: "/es", flag: "🇪🇸", label: "ES" }
   ];
 
   let appUrl = URL_RPW_JP;
@@ -644,6 +775,7 @@ function renderHeader(lang) {
   if (lang === "fr") appUrl = URL_RPW_FR;
   if (lang === "de") appUrl = URL_RPW_DE;
   if (lang === "it") appUrl = URL_RPW_IT;
+  if (lang === "es") appUrl = URL_RPW_ES;
 
   return `
   <header class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 text-white">
@@ -839,7 +971,7 @@ function renderPortalPage(lang) {
       </p>
 
       <!-- Launch Action Cards (5 Languages) -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3.5 max-w-7xl mx-auto mb-12">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-3.5 max-w-7xl mx-auto mb-12">
         <!-- Japanese Edition -->
         <a href="${URL_RPW_JP}" class="group relative flex flex-col items-center justify-center p-4 rounded-2xl bg-gradient-to-b from-slate-800 to-slate-850 border border-emerald-500/40 hover:border-emerald-400 shadow-xl shadow-emerald-950/50 hover:shadow-emerald-900/40 transition-all hover:-translate-y-1 text-center">
           <div class="flex items-center gap-1.5 mb-1.5">
@@ -892,6 +1024,19 @@ function renderPortalPage(lang) {
           </span>
         </a>
 
+                <!-- Spanish Edition -->
+        <a href="${URL_RPW_ES}" class="group relative flex flex-col items-center justify-center p-4 rounded-2xl bg-gradient-to-b from-slate-800 to-slate-850 border border-amber-500/40 hover:border-amber-400 shadow-xl shadow-amber-950/50 hover:shadow-amber-900/40 transition-all hover:-translate-y-1 text-center">
+          <div class="flex items-center gap-1.5 mb-1.5">
+            <span class="text-xl">🇪🇸</span>
+            <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider">ES / Español</span>
+          </div>
+          <span class="text-xs sm:text-sm font-bold text-white mb-1 line-clamp-1">${cfg.launchEsTitle}</span>
+          <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-amber-300 group-hover:text-amber-200 mt-1">
+            <span>${cfg.launchEsBtn}</span>
+            <svg class="w-3 h-3 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </span>
+        </a>
+
         <!-- Italian Edition -->
         <a href="${URL_RPW_IT}" class="group relative flex flex-col items-center justify-center p-4 rounded-2xl bg-gradient-to-b from-slate-800 to-slate-850 border border-rose-500/40 hover:border-rose-400 shadow-xl shadow-rose-950/50 hover:shadow-rose-900/40 transition-all hover:-translate-y-1 text-center">
           <div class="flex items-center gap-1.5 mb-1.5">
@@ -910,19 +1055,19 @@ function renderPortalPage(lang) {
       <div class="flex flex-wrap items-center justify-center gap-6 text-xs font-medium text-slate-400">
         <span class="inline-flex items-center gap-1.5">
           <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-          ${lang === "it" ? "100% Gratuito per sempre" : (lang === "de" ? "100% Kostenlos ohne Abo" : (lang === "fr" ? "100% Gratuit sans frais" : (lang === "en" ? "100% Free Forever" : "完全無料（課金なし）")))}
+          ${lang === "es" ? "100% Gratuito para siempre" : (lang === "it" ? "100% Gratuito per sempre" : (lang === "de" ? "100% Kostenlos ohne Abo" : (lang === "fr" ? "100% Gratuit sans frais" : (lang === "en" ? "100% Free Forever" : "完全無料（課金なし）"))))}
         </span>
         <span class="inline-flex items-center gap-1.5">
           <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-          ${lang === "it" ? "Senza registrazione" : (lang === "de" ? "Ohne Registrierung" : (lang === "fr" ? "Sans inscription" : (lang === "en" ? "No Account Needed" : "登録不要（即日開始）")))}
+          ${lang === "es" ? "Sin registro previo" : (lang === "it" ? "Senza registrazione" : (lang === "de" ? "Ohne Registrierung" : (lang === "fr" ? "Sans inscription" : (lang === "en" ? "No Account Needed" : "登録不要（即日開始）"))))}
         </span>
         <span class="inline-flex items-center gap-1.5">
           <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-          ${lang === "it" ? "Privacy 100% sul dispositivo" : (lang === "de" ? "100% Lokaler Datenschutz" : (lang === "fr" ? "Stockage local 100% privé" : (lang === "en" ? "100% Private Local Storage" : "端末内ローカル保存（情報送信ゼロ）")))}
+          ${lang === "es" ? "Privacidad 100% en el dispositivo" : (lang === "it" ? "Privacy 100% sul dispositivo" : (lang === "de" ? "100% Lokaler Datenschutz" : (lang === "fr" ? "Stockage local 100% privé" : (lang === "en" ? "100% Private Local Storage" : "端末内ローカル保存（情報送信ゼロ）"))))}
         </span>
         <span class="inline-flex items-center gap-1.5">
           <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-          ${lang === "it" ? "PWA & Offline garantito" : (lang === "de" ? "PWA & Offline einsatzbereit" : (lang === "fr" ? "Prêt PWA & Hors-ligne" : (lang === "en" ? "PWA & Offline Ready" : "PWAオフライン動作対応")))}
+          ${lang === "es" ? "Compatible PWA y sin conexión" : (lang === "it" ? "PWA & Offline garantito" : (lang === "de" ? "PWA & Offline einsatzbereit" : (lang === "fr" ? "Prêt PWA & Hors-ligne" : (lang === "en" ? "PWA & Offline Ready" : "PWAオフライン動作対応"))))}
         </span>
       </div>
     </div>
@@ -1069,6 +1214,7 @@ function renderLegalPage(type, lang) {
   const isFr = lang === "fr";
   const isDe = lang === "de";
   const isIt = lang === "it";
+  const isEs = lang === "es";
 
   let titles = {};
   if (isJa) {
@@ -1094,6 +1240,14 @@ function renderLegalPage(type, lang) {
       about: "Impressum & Über uns",
       contact: "Kontakt",
       guide: "Bedienungsanleitung & Leitfaden"
+    };
+  } else if (isEs) {
+    titles = {
+      privacy: "Política de Privacidad",
+      terms: "Términos y Condiciones de Uso",
+      about: "Sobre Nosotros",
+      contact: "Contacto y Asistencia",
+      guide: "Guía de Ciclos de Sustitución"
     };
   } else if (isIt) {
     titles = {
@@ -1578,7 +1732,9 @@ export default {
 
     // Determine language (ja, en, fr, de, it)
     let lang = "ja";
-    if (pathname === "/it" || pathname.startsWith("/it/")) {
+    if (pathname === "/es" || pathname.startsWith("/es/")) {
+      lang = "es";
+    } else if (pathname === "/it" || pathname.startsWith("/it/")) {
       lang = "it";
     } else if (pathname === "/de" || pathname.startsWith("/de/")) {
       lang = "de";
@@ -1586,6 +1742,8 @@ export default {
       lang = "fr";
     } else if (pathname === "/en" || pathname.startsWith("/en/")) {
       lang = "en";
+    } else if (url.searchParams.get("lang") === "es") {
+      lang = "es";
     } else if (url.searchParams.get("lang") === "it") {
       lang = "it";
     } else if (url.searchParams.get("lang") === "de") {
@@ -1598,7 +1756,11 @@ export default {
 
     // Normalize route path without language prefix
     let cleanPath = pathname;
-    if (cleanPath.startsWith("/it/")) {
+    if (cleanPath.startsWith("/es/")) {
+      cleanPath = "/" + cleanPath.slice(4);
+    } else if (cleanPath === "/es") {
+      cleanPath = "/";
+    } else if (cleanPath.startsWith("/it/")) {
       cleanPath = "/" + cleanPath.slice(4);
     } else if (cleanPath === "/it") {
       cleanPath = "/";
