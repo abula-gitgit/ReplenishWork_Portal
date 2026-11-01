@@ -6,6 +6,7 @@ const URL_RPW_JP = "https://rpwjp.easy-log.app/";
 const URL_RPW_EN = "https://rpwen.easy-log.app/";
 const URL_RPW_FR = "https://rpwfr.easy-log.app/";
 const URL_RPW_DE = "https://rpwde.easy-log.app/";
+const URL_RPW_IT = "https://rpwit.easy-log.app/";
 const URL_RP_PORTAL = "https://rp.easy-log.app/";
 const URL_RP_JP = "https://rpjp.easy-log.app/";
 const URL_RP_EN = "https://rpen.easy-log.app/";
@@ -42,6 +43,8 @@ const LANG_CONFIG = {
     launchFrBtn: "Lancer l'application française (Gratuit)",
     launchDeTitle: "Replenish for Work (Deutsch)",
     launchDeBtn: "Deutsche App starten (Kostenlos)",
+    launchItTitle: "Replenish for Work (Italiano)",
+    launchItBtn: "Apri versione italiana (Gratis)",
 
     industriesBadge: "業種別プリセットですぐに使える",
     industriesTitle: "あらゆるビジネス現場の消耗品に対応",
@@ -163,6 +166,8 @@ const LANG_CONFIG = {
     launchFrBtn: "Lancer l'application française (Gratuit)",
     launchDeTitle: "Replenish for Work (Deutsch)",
     launchDeBtn: "Deutsche App starten (Kostenlos)",
+    launchItTitle: "Replenish for Work (Italiano)",
+    launchItBtn: "Launch Italian Edition (Free)",
 
     industriesBadge: "Ready-to-Use Industry Presets",
     industriesTitle: "Tailored for Every Workplace Environment",
@@ -284,6 +289,8 @@ const LANG_CONFIG = {
     launchFrBtn: "Lancer l'application française (Gratuit)",
     launchDeTitle: "Replenish for Work (Deutsch)",
     launchDeBtn: "Deutsche App starten (Kostenlos)",
+    launchItTitle: "Replenish for Work (Italiano)",
+    launchItBtn: "Version italienne (Gratuit)",
 
     industriesBadge: "Modèles sectoriels prêts à l'emploi",
     industriesTitle: "Conçu pour tous les environnements professionnels",
@@ -405,6 +412,8 @@ const LANG_CONFIG = {
     launchFrBtn: "Französische Version (Kostenlos)",
     launchDeTitle: "Replenish for Work (Deutsch)",
     launchDeBtn: "Deutsche App starten (Kostenlos)",
+    launchItTitle: "Replenish for Work (Italienisch)",
+    launchItBtn: "Italienische Version (Kostenlos)",
 
     industriesBadge: "Sofort einsatzbereite Branchen-Vorlagen",
     industriesTitle: "Maßgeschneidert für jeden Unternehmensbereich",
@@ -494,6 +503,129 @@ const LANG_CONFIG = {
     aboutTitle: "Über uns",
     contactTitle: "Kontakt",
     guideTitle: "Leitfaden"
+  },
+  it: {
+    code: "it",
+    label: "Italiano",
+    flag: "🇮🇹",
+    homePath: "/it",
+    privacyPath: "/it/privacy",
+    termsPath: "/it/terms",
+    aboutPath: "/it/about",
+    contactPath: "/it/contact",
+    guidePath: "/it/guide",
+    brandTitle: "Replenish for Work",
+    brandSubtitle: "Portale di gestione dei cicli di consumo e manutenzione aziendale",
+    pageTitle: "Replenish for Work Portale - Gestore cicli di consumo e manutenzione | 100% Gratuito & Locale",
+    pageDesc: "Ottimizza i cicli di rinnovo e calcola i tempi di consegna per uffici, studi medici, ristorazione e officine. Zero sprechi, 100% sicuro sul tuo dispositivo.",
+    heroBadge: "Basta rotture di stock e ritardi negli ordini fornitori",
+    heroTitle: 'Pianifica i cicli di consumo e manutenzione<br><span class="bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 bg-clip-text text-transparent">con precisione e semplicità.</span>',
+    heroDesc: "Cancelleria per ufficio, dispositivi medici, igiene nella ristorazione o ricambi per officina: calcola automaticamente le date di sostituzione e programma gli ordini con anticipo.",
+    navHome: "Start",
+    navIndustries: "Settori",
+    navFeatures: "Vantaggi",
+    navFaq: "FAQ",
+    navLaunch: "Apri applicazione",
+
+    launchJpTitle: "Replenish for Work (Giapponese)",
+    launchJpBtn: "Versione giapponese (Gratis)",
+    launchEnTitle: "Replenish for Work (Inglese)",
+    launchEnBtn: "Versione inglese (Gratis)",
+    launchFrTitle: "Replenish for Work (Francese)",
+    launchFrBtn: "Versione francese (Gratis)",
+    launchDeTitle: "Replenish for Work (Tedesco)",
+    launchDeBtn: "Versione tedesca (Gratis)",
+    launchItTitle: "Replenish for Work (Italiano)",
+    launchItBtn: "Apri versione italiana (Gratis)",
+
+    industriesBadge: "Modelli di settore pronti all'uso",
+    industriesTitle: "Progettato per ogni ambiente lavorativo",
+    industriesSub: "Applica con un clic i cicli e gli articoli raccomandati, poi personalizzali liberamente secondo le tue esigenze operative.",
+
+    industries: [
+      {
+        icon: "🏢",
+        name: "Ufficio & Amministrazione",
+        desc: "Carta per fotocopie A4, cartucce toner, olio per distruggidocumenti, filtri per boccioni d'acqua e cancelleria",
+        tag: "Riduzione costi"
+      },
+      {
+        icon: "🏥",
+        name: "Medicina, Studi medici & Farmacie",
+        desc: "Guanti da visita, disinfettante mani, buste per autoclave, aghi, siringhe monouso e mascherine chirurgiche",
+        tag: "Igiene & Sicurezza"
+      },
+      {
+        icon: "🍽️",
+        name: "Ristorazione, Bar & Cucina",
+        desc: "Filtri macchina caffè espresso, sgrassatori industriali, sanificanti HACCP, carta cucina e guanti alimentari",
+        tag: "HACCP & Igiene"
+      },
+      {
+        icon: "💇",
+        name: "Parrucchieri & Centri estetici",
+        desc: "Asciugamani monouso, mantelle, guanti per colorazione, disinfettante ferri, lamette rasoio e carta paranuca",
+        tag: "Qualità del servizio"
+      },
+      {
+        icon: "🏭",
+        name: "Officine, Artigianato & Manutenzione",
+        desc: "Sgrassatore freni, panni assorbenti industriali, dischi da taglio, occhiali protettivi, grasso lubrificante",
+        tag: "Zero tempi fermi"
+      },
+      {
+        icon: "🏨",
+        name: "Hotel & Strutture ricettive",
+        desc: "Set cortesia per ospiti, detergenti camere, ciabattine monouso, filtri HEPA, sacchi biancheria",
+        tag: "Standard per gli ospiti"
+      }
+    ],
+
+    featuresBadge: "Punti di forza",
+    featuresTitle: "Perché i professionisti scelgono Replenish for Work",
+    feat1Title: "Preavviso intelligente con tempi di consegna fornitore",
+    feat1Desc: "Ordinare solo quando il materiale è finito blocca l'attività. Calcoliamo la data ideale di riordino a ritroso dai tempi di spedizione.",
+    feat2Title: "100% Archiviazione locale & Sicura (Zero trasmissione)",
+    feat2Desc: "Tutti i tuoi elenchi, prezzi, fornitori e note rimangono protetti esclusivamente nel browser del tuo dispositivo (IndexedDB). Zero fughe di dati.",
+    feat3Title: "Compatibile PWA & Funzionamento completo offline",
+    feat3Desc: "Installa l'app con un tocco sui tablet dell'officina o dello studio. Funziona perfettamente anche nei sotterranei senza connessione Wi-Fi.",
+    feat4Title: "100% Gratuito & Nessuna registrazione richiesta",
+    feat4Desc: "Nessun account, nessun canone mensile per utente, nessuna carta di credito. Apri il link e inizia a organizzare il magazzino.",
+
+    faqBadge: "FAQ",
+    faqTitle: "Domande frequenti",
+    faqs: [
+      {
+        q: "Q. I dati aziendali e i prezzi fornitori sono al sicuro?",
+        a: "Assolutamente sì. Replenish for Work adotta un'architettura rigorosamente client-side: ogni articolo, fornitore, costo e nota risiede nell'IndexedDB del tuo browser e non viene mai inviato a server esterni."
+      },
+      {
+        q: "Q. È possibile fare un backup o trasferire i dati su un altro PC?",
+        a: "Certamente. Tramite la voce «Backup» nel menu puoi esportare l'intero archivio come file JSON aperto e ripristinarlo su qualsiasi dispositivo con un clic."
+      },
+      {
+        q: "Q. L'applicazione è davvero gratuita per sempre?",
+        a: "Sì, gratuita al 100% senza limitazioni sul numero di articoli, senza versioni premium a pagamento e senza abbonamenti."
+      },
+      {
+        q: "Q. In cosa si differenzia dalla versione domestica di Replenish?",
+        a: "La versione standard serve a gestire le provviste di casa (bagno, cucina). Replenish for Work include strumenti professionali come i tempi di consegna fornitore (Lead Time), le scorte minime, i modelli di settore e i campi per codici fornitore e ubicazione."
+      }
+    ],
+
+    ctaTitle: "Elimina le rotture di stock e lo stress degli ordini da oggi.",
+    ctaDesc: "Nessuna configurazione complessa o registrazione. Avvia l'applicazione gratuitamente nel tuo browser.",
+    ctaBtn: "Inizia con Replenish for Work",
+    familyTitle: "Cerchi un gestore per la tua casa?",
+    familyDesc: "Scopri la versione Replenish Home per monitorare bagnoschiuma, detersivi, spezie e provviste quotidiane della famiglia.",
+    familyBtn: "Visita il portale Replenish Home",
+
+    footerDisclaimer: "Replenish for Work è uno strumento di supporto per pianificare le scadenze e i riordini di materiali di consumo aziendali. I dati sono conservati unicamente sul dispositivo dell'utente.",
+    privacyTitle: "Informativa sulla privacy",
+    termsTitle: "Termini d'uso",
+    aboutTitle: "Chi siamo",
+    contactTitle: "Contatti",
+    guideTitle: "Guida operativa"
   }
 };
 
@@ -503,13 +635,15 @@ function renderHeader(lang) {
     { code: "ja", path: "/", flag: "🇯🇵", label: "JA" },
     { code: "en", path: "/en", flag: "🇺🇸", label: "EN" },
     { code: "fr", path: "/fr", flag: "🇫🇷", label: "FR" },
-    { code: "de", path: "/de", flag: "🇩🇪", label: "DE" }
+    { code: "de", path: "/de", flag: "🇩🇪", label: "DE" },
+    { code: "it", path: "/it", flag: "🇮🇹", label: "IT" }
   ];
 
   let appUrl = URL_RPW_JP;
   if (lang === "en") appUrl = URL_RPW_EN;
   if (lang === "fr") appUrl = URL_RPW_FR;
   if (lang === "de") appUrl = URL_RPW_DE;
+  if (lang === "it") appUrl = URL_RPW_IT;
 
   return `
   <header class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 text-white">
@@ -537,12 +671,12 @@ function renderHeader(lang) {
       </nav>
 
       <div class="flex items-center gap-3">
-        <!-- Language Switcher -->
+        <!-- Language Switcher (5 Languages) -->
         <div class="flex items-center bg-slate-800/90 rounded-lg p-1 border border-slate-700">
           ${langs.map(l => `
-            <a href="${l.path}" class="flex items-center gap-1 px-2.5 py-1 rounded text-xs font-bold transition ${l.code === lang ? 'bg-emerald-600 text-white shadow-sm' : 'text-slate-400 hover:text-white'}">
+            <a href="${l.path}" class="flex items-center gap-1 px-2 py-1 rounded text-xs font-bold transition ${l.code === lang ? 'bg-emerald-600 text-white shadow-sm' : 'text-slate-400 hover:text-white'}">
               <span>${l.flag}</span>
-              <span>${l.label}</span>
+              <span class="hidden sm:inline">${l.label}</span>
             </a>
           `).join("")}
         </div>
@@ -587,6 +721,7 @@ function renderFooter(lang) {
             <li><a href="${URL_RPW_EN}" class="hover:text-emerald-400 transition">🇺🇸 Replenish for Work (EN)</a></li>
             <li><a href="${URL_RPW_FR}" class="hover:text-emerald-400 transition">🇫🇷 Replenish for Work (FR)</a></li>
             <li><a href="${URL_RPW_DE}" class="hover:text-emerald-400 transition">🇩🇪 Replenish for Work (DE)</a></li>
+            <li><a href="${URL_RPW_IT}" class="hover:text-emerald-400 transition">🇮🇹 Replenish for Work (IT)</a></li>
             <li class="pt-2 border-t border-slate-800 text-[11px] text-slate-500 uppercase tracking-wider">Household Series</li>
             <li><a href="${URL_RP_PORTAL}" class="hover:text-emerald-400 transition">Replenish Portal (Home)</a></li>
             <li><a href="${URL_RP_JP}" class="hover:text-emerald-400 transition">Replenish Household (JP)</a></li>
@@ -703,57 +838,70 @@ function renderPortalPage(lang) {
         ${cfg.heroDesc}
       </p>
 
-      <!-- Launch Action Cards (4 Languages) -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto mb-12">
+      <!-- Launch Action Cards (5 Languages) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3.5 max-w-7xl mx-auto mb-12">
         <!-- Japanese Edition -->
-        <a href="${URL_RPW_JP}" class="group relative flex flex-col items-center justify-center p-5 rounded-2xl bg-gradient-to-b from-slate-800 to-slate-850 border border-emerald-500/40 hover:border-emerald-400 shadow-xl shadow-emerald-950/50 hover:shadow-emerald-900/40 transition-all hover:-translate-y-1 text-center">
-          <div class="flex items-center gap-2 mb-2">
-            <span class="text-2xl">🇯🇵</span>
-            <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">JA / Japanese</span>
+        <a href="${URL_RPW_JP}" class="group relative flex flex-col items-center justify-center p-4 rounded-2xl bg-gradient-to-b from-slate-800 to-slate-850 border border-emerald-500/40 hover:border-emerald-400 shadow-xl shadow-emerald-950/50 hover:shadow-emerald-900/40 transition-all hover:-translate-y-1 text-center">
+          <div class="flex items-center gap-1.5 mb-1.5">
+            <span class="text-xl">🇯🇵</span>
+            <span class="text-[11px] font-bold text-emerald-400 uppercase tracking-wider">JA / Japanese</span>
           </div>
-          <span class="text-sm font-bold text-white mb-1 line-clamp-1">${cfg.launchJpTitle}</span>
-          <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-300 group-hover:text-emerald-200 mt-2">
+          <span class="text-xs sm:text-sm font-bold text-white mb-1 line-clamp-1">${cfg.launchJpTitle}</span>
+          <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-300 group-hover:text-emerald-200 mt-1">
             <span>${cfg.launchJpBtn}</span>
-            <svg class="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+            <svg class="w-3 h-3 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
           </span>
         </a>
 
         <!-- English Edition -->
-        <a href="${URL_RPW_EN}" class="group relative flex flex-col items-center justify-center p-5 rounded-2xl bg-gradient-to-b from-slate-800 to-slate-850 border border-cyan-500/40 hover:border-cyan-400 shadow-xl shadow-cyan-950/50 hover:shadow-cyan-900/40 transition-all hover:-translate-y-1 text-center">
-          <div class="flex items-center gap-2 mb-2">
-            <span class="text-2xl">🇺🇸</span>
-            <span class="text-xs font-bold text-cyan-400 uppercase tracking-wider">EN / English</span>
+        <a href="${URL_RPW_EN}" class="group relative flex flex-col items-center justify-center p-4 rounded-2xl bg-gradient-to-b from-slate-800 to-slate-850 border border-cyan-500/40 hover:border-cyan-400 shadow-xl shadow-cyan-950/50 hover:shadow-cyan-900/40 transition-all hover:-translate-y-1 text-center">
+          <div class="flex items-center gap-1.5 mb-1.5">
+            <span class="text-xl">🇺🇸</span>
+            <span class="text-[11px] font-bold text-cyan-400 uppercase tracking-wider">EN / English</span>
           </div>
-          <span class="text-sm font-bold text-white mb-1 line-clamp-1">${cfg.launchEnTitle}</span>
-          <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-cyan-300 group-hover:text-cyan-200 mt-2">
+          <span class="text-xs sm:text-sm font-bold text-white mb-1 line-clamp-1">${cfg.launchEnTitle}</span>
+          <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-cyan-300 group-hover:text-cyan-200 mt-1">
             <span>${cfg.launchEnBtn}</span>
-            <svg class="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+            <svg class="w-3 h-3 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
           </span>
         </a>
 
         <!-- French Edition -->
-        <a href="${URL_RPW_FR}" class="group relative flex flex-col items-center justify-center p-5 rounded-2xl bg-gradient-to-b from-slate-800 to-slate-850 border border-indigo-500/40 hover:border-indigo-400 shadow-xl shadow-indigo-950/50 hover:shadow-indigo-900/40 transition-all hover:-translate-y-1 text-center">
-          <div class="flex items-center gap-2 mb-2">
-            <span class="text-2xl">🇫🇷</span>
-            <span class="text-xs font-bold text-indigo-400 uppercase tracking-wider">FR / Français</span>
+        <a href="${URL_RPW_FR}" class="group relative flex flex-col items-center justify-center p-4 rounded-2xl bg-gradient-to-b from-slate-800 to-slate-850 border border-indigo-500/40 hover:border-indigo-400 shadow-xl shadow-indigo-950/50 hover:shadow-indigo-900/40 transition-all hover:-translate-y-1 text-center">
+          <div class="flex items-center gap-1.5 mb-1.5">
+            <span class="text-xl">🇫🇷</span>
+            <span class="text-[11px] font-bold text-indigo-400 uppercase tracking-wider">FR / Français</span>
           </div>
-          <span class="text-sm font-bold text-white mb-1 line-clamp-1">${cfg.launchFrTitle}</span>
-          <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-indigo-300 group-hover:text-indigo-200 mt-2">
+          <span class="text-xs sm:text-sm font-bold text-white mb-1 line-clamp-1">${cfg.launchFrTitle}</span>
+          <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-indigo-300 group-hover:text-indigo-200 mt-1">
             <span>${cfg.launchFrBtn}</span>
-            <svg class="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+            <svg class="w-3 h-3 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
           </span>
         </a>
 
         <!-- German Edition -->
-        <a href="${URL_RPW_DE}" class="group relative flex flex-col items-center justify-center p-5 rounded-2xl bg-gradient-to-b from-slate-800 to-slate-850 border border-amber-500/40 hover:border-amber-400 shadow-xl shadow-amber-950/50 hover:shadow-amber-900/40 transition-all hover:-translate-y-1 text-center">
-          <div class="flex items-center gap-2 mb-2">
-            <span class="text-2xl">🇩🇪</span>
-            <span class="text-xs font-bold text-amber-400 uppercase tracking-wider">DE / Deutsch</span>
+        <a href="${URL_RPW_DE}" class="group relative flex flex-col items-center justify-center p-4 rounded-2xl bg-gradient-to-b from-slate-800 to-slate-850 border border-amber-500/40 hover:border-amber-400 shadow-xl shadow-amber-950/50 hover:shadow-amber-900/40 transition-all hover:-translate-y-1 text-center">
+          <div class="flex items-center gap-1.5 mb-1.5">
+            <span class="text-xl">🇩🇪</span>
+            <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider">DE / Deutsch</span>
           </div>
-          <span class="text-sm font-bold text-white mb-1 line-clamp-1">${cfg.launchDeTitle}</span>
-          <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-amber-300 group-hover:text-amber-200 mt-2">
+          <span class="text-xs sm:text-sm font-bold text-white mb-1 line-clamp-1">${cfg.launchDeTitle}</span>
+          <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-amber-300 group-hover:text-amber-200 mt-1">
             <span>${cfg.launchDeBtn}</span>
-            <svg class="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+            <svg class="w-3 h-3 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </span>
+        </a>
+
+        <!-- Italian Edition -->
+        <a href="${URL_RPW_IT}" class="group relative flex flex-col items-center justify-center p-4 rounded-2xl bg-gradient-to-b from-slate-800 to-slate-850 border border-rose-500/40 hover:border-rose-400 shadow-xl shadow-rose-950/50 hover:shadow-rose-900/40 transition-all hover:-translate-y-1 text-center">
+          <div class="flex items-center gap-1.5 mb-1.5">
+            <span class="text-xl">🇮🇹</span>
+            <span class="text-[11px] font-bold text-rose-400 uppercase tracking-wider">IT / Italiano</span>
+          </div>
+          <span class="text-xs sm:text-sm font-bold text-white mb-1 line-clamp-1">${cfg.launchItTitle}</span>
+          <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-rose-300 group-hover:text-rose-200 mt-1">
+            <span>${cfg.launchItBtn}</span>
+            <svg class="w-3 h-3 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
           </span>
         </a>
       </div>
@@ -762,19 +910,19 @@ function renderPortalPage(lang) {
       <div class="flex flex-wrap items-center justify-center gap-6 text-xs font-medium text-slate-400">
         <span class="inline-flex items-center gap-1.5">
           <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-          ${lang === "de" ? "100% Kostenlos ohne Abo" : (lang === "fr" ? "100% Gratuit sans frais" : (lang === "en" ? "100% Free Forever" : "完全無料（課金なし）"))}
+          ${lang === "it" ? "100% Gratuito per sempre" : (lang === "de" ? "100% Kostenlos ohne Abo" : (lang === "fr" ? "100% Gratuit sans frais" : (lang === "en" ? "100% Free Forever" : "完全無料（課金なし）")))}
         </span>
         <span class="inline-flex items-center gap-1.5">
           <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-          ${lang === "de" ? "Ohne Registrierung" : (lang === "fr" ? "Sans inscription" : (lang === "en" ? "No Account Needed" : "登録不要（即日開始）"))}
+          ${lang === "it" ? "Senza registrazione" : (lang === "de" ? "Ohne Registrierung" : (lang === "fr" ? "Sans inscription" : (lang === "en" ? "No Account Needed" : "登録不要（即日開始）")))}
         </span>
         <span class="inline-flex items-center gap-1.5">
           <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-          ${lang === "de" ? "100% Lokaler Datenschutz" : (lang === "fr" ? "Stockage local 100% privé" : (lang === "en" ? "100% Private Local Storage" : "端末内ローカル保存（情報送信ゼロ）"))}
+          ${lang === "it" ? "Privacy 100% sul dispositivo" : (lang === "de" ? "100% Lokaler Datenschutz" : (lang === "fr" ? "Stockage local 100% privé" : (lang === "en" ? "100% Private Local Storage" : "端末内ローカル保存（情報送信ゼロ）")))}
         </span>
         <span class="inline-flex items-center gap-1.5">
           <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-          ${lang === "de" ? "PWA & Offline einsatzbereit" : (lang === "fr" ? "Prêt PWA & Hors-ligne" : (lang === "en" ? "PWA & Offline Ready" : "PWAオフライン動作対応"))}
+          ${lang === "it" ? "PWA & Offline garantito" : (lang === "de" ? "PWA & Offline einsatzbereit" : (lang === "fr" ? "Prêt PWA & Hors-ligne" : (lang === "en" ? "PWA & Offline Ready" : "PWAオフライン動作対応")))}
         </span>
       </div>
     </div>
@@ -877,18 +1025,21 @@ function renderPortalPage(lang) {
         ${cfg.ctaDesc}
       </p>
       
-      <div class="flex flex-wrap items-center justify-center gap-4 mb-14">
-        <a href="${URL_RPW_JP}" class="px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm shadow-lg shadow-emerald-950/60 transition">
-          🇯🇵 日本語版を開く
+      <div class="flex flex-wrap items-center justify-center gap-3.5 mb-14">
+        <a href="${URL_RPW_JP}" class="px-5 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm shadow-lg shadow-emerald-950/60 transition">
+          🇯🇵 日本語版
         </a>
-        <a href="${URL_RPW_EN}" class="px-6 py-3.5 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white font-bold text-sm shadow-lg shadow-cyan-950/60 transition">
-          🇺🇸 English Edition
+        <a href="${URL_RPW_EN}" class="px-5 py-3 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white font-bold text-xs sm:text-sm shadow-lg shadow-cyan-950/60 transition">
+          🇺🇸 English
         </a>
-        <a href="${URL_RPW_FR}" class="px-6 py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-sm shadow-lg shadow-indigo-950/60 transition">
-          🇫🇷 Version Française
+        <a href="${URL_RPW_FR}" class="px-5 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-xs sm:text-sm shadow-lg shadow-indigo-950/60 transition">
+          🇫🇷 Français
         </a>
-        <a href="${URL_RPW_DE}" class="px-6 py-3.5 rounded-xl bg-amber-600 hover:bg-amber-500 text-white font-bold text-sm shadow-lg shadow-amber-950/60 transition">
-          🇩🇪 Deutsche Version
+        <a href="${URL_RPW_DE}" class="px-5 py-3 rounded-xl bg-amber-600 hover:bg-amber-500 text-white font-bold text-xs sm:text-sm shadow-lg shadow-amber-950/60 transition">
+          🇩🇪 Deutsch
+        </a>
+        <a href="${URL_RPW_IT}" class="px-5 py-3 rounded-xl bg-rose-600 hover:bg-rose-500 text-white font-bold text-xs sm:text-sm shadow-lg shadow-rose-950/60 transition">
+          🇮🇹 Italiano
         </a>
       </div>
 
@@ -917,6 +1068,7 @@ function renderLegalPage(type, lang) {
   const isJa = lang === "ja";
   const isFr = lang === "fr";
   const isDe = lang === "de";
+  const isIt = lang === "it";
 
   let titles = {};
   if (isJa) {
@@ -942,6 +1094,14 @@ function renderLegalPage(type, lang) {
       about: "Impressum & Über uns",
       contact: "Kontakt",
       guide: "Bedienungsanleitung & Leitfaden"
+    };
+  } else if (isIt) {
+    titles = {
+      privacy: "Informativa sulla privacy",
+      terms: "Termini d'uso & Limitazione di responsabilità",
+      about: "Chi siamo & Dettagli servizio",
+      contact: "Contatti",
+      guide: "Manuale d'uso & Guida rapida"
     };
   } else {
     titles = {
@@ -1007,6 +1167,23 @@ function renderLegalPage(type, lang) {
         <h2 class="text-xl font-bold text-white mb-3">3. Web-Analyse</h2>
         <p class="text-sm text-slate-300 leading-relaxed mb-6">
           Zur Sicherstellung von Stabilität und Geschwindigkeit können anonymisierte Metriken (z. B. Cloudflare Web Analytics) verwendet werden. Es werden keinerlei personenbezogene Daten erhoben.
+        </p>
+      `;
+    } else if (isIt) {
+      bodyContent = `
+        <h2 class="text-xl font-bold text-white mb-3">1. Riservatezza & Archiviazione 100% Locale</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Replenish for Work è stato sviluppato con un approccio incentrato sulla massima tutela della privacy. L'elenco delle forniture, i tempi di consegna dei fornitori, i prezzi, le posizioni e le note rimangono confinati nella memoria IndexedDB del tuo browser. Nessun dato aziendale viene trasmesso o salvato su server remoti.
+        </p>
+
+        <h2 class="text-xl font-bold text-white mb-3">2. Annunci pubblicitari & Cookie</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Potrebbero essere visualizzati annunci pubblicitari di terze parti (come Google AdSense). Tali fornitori possono fare uso di cookie per proporre annunci pertinenti. È possibile gestire o disabilitare l'utilizzo dei cookie dalle impostazioni del proprio browser.
+        </p>
+
+        <h2 class="text-xl font-bold text-white mb-3">3. Analisi e statistiche</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Per monitorare le performance e l'affidabilità della piattaforma possono essere impiegate metriche di traffico totalmente anonimizzate (ad es. Cloudflare Web Analytics), che non raccolgono alcun dato identificativo dell'utente.
         </p>
       `;
     } else {
@@ -1079,6 +1256,23 @@ function renderLegalPage(type, lang) {
           Der Betreiber behält sich das Recht vor, das Angebot jederzeit ohne vorherige Ankündigung anzupassen oder einzustellen.
         </p>
       `;
+    } else if (isIt) {
+      bodyContent = `
+        <h2 class="text-xl font-bold text-white mb-3">1. Condizioni d'uso</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Replenish for Work viene fornito come strumento gratuito di assistenza per pianificare la rotazione dei materiali e gli ordini di fornitura. L'utilizzo dell'applicazione avviene sotto la piena responsabilità dell'utente.
+        </p>
+
+        <h2 class="text-xl font-bold text-white mb-3">2. Esclusione di responsabilità</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          L'editore non è responsabile per eventuali rotture di stock, ritardi di consegna o perdite di dati causate dalla pulizia dei dati locali del browser. Si consiglia vivamente di salvare regolarmente una copia di backup JSON del proprio inventario.
+        </p>
+
+        <h2 class="text-xl font-bold text-white mb-3">3. Modifiche del servizio</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          L'editore si riserva il diritto di aggiornare, modificare o sospendere le funzionalità dell'applicazione in qualsiasi momento senza obbligo di preavviso.
+        </p>
+      `;
     } else {
       bodyContent = `
         <h2 class="text-xl font-bold text-white mb-3">1. Terms of Use</h2>
@@ -1137,6 +1331,19 @@ function renderLegalPage(type, lang) {
           <div class="flex"><span class="w-36 text-slate-400 font-bold">Preise:</span><span class="text-white">100% Kostenlos (Ohne Registrierung)</span></div>
         </div>
       `;
+    } else if (isIt) {
+      bodyContent = `
+        <h2 class="text-xl font-bold text-white mb-3">Presentazione del servizio</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Replenish for Work è una web app studiata per cliniche, uffici, negozi e officine per prevenire la rottura di stock dei consumabili chiave. Grazie alla sua architettura interamente locale, le informazioni della tua attività rimangono rigorosamente confidenziali.
+        </p>
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-3 text-xs sm:text-sm">
+          <div class="flex"><span class="w-36 text-slate-400 font-bold">Applicazione:</span><span class="text-white">Replenish for Work</span></div>
+          <div class="flex"><span class="w-36 text-slate-400 font-bold">Dominio:</span><span class="text-emerald-400 font-mono">rpw.easy-log.app</span></div>
+          <div class="flex"><span class="w-36 text-slate-400 font-bold">Editore:</span><span class="text-white">stoooone.studio</span></div>
+          <div class="flex"><span class="w-36 text-slate-400 font-bold">Prezzo:</span><span class="text-white">100% Gratuito (Senza registrazione)</span></div>
+        </div>
+      `;
     } else {
       bodyContent = `
         <h2 class="text-xl font-bold text-white mb-3">About Replenish for Work</h2>
@@ -1182,6 +1389,17 @@ function renderLegalPage(type, lang) {
         </p>
         <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 text-center">
           <span class="text-xs text-slate-400 block mb-2">Support-Adresse</span>
+          <a href="mailto:stoooone.studio@gmail.com" class="text-base sm:text-lg font-bold text-emerald-400 hover:underline font-mono">stoooone.studio@gmail.com</a>
+        </div>
+      `;
+    } else if (isIt) {
+      bodyContent = `
+        <h2 class="text-xl font-bold text-white mb-3">Contatti & Assistenza</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Per segnalazioni, richieste di funzionalità o domande, puoi contattarci all'indirizzo e-mail:
+        </p>
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 text-center">
+          <span class="text-xs text-slate-400 block mb-2">Email di contatto</span>
           <a href="mailto:stoooone.studio@gmail.com" class="text-base sm:text-lg font-bold text-emerald-400 hover:underline font-mono">stoooone.studio@gmail.com</a>
         </div>
       `;
@@ -1264,6 +1482,28 @@ function renderLegalPage(type, lang) {
           </div>
         </div>
       `;
+    } else if (isIt) {
+      bodyContent = `
+        <h2 class="text-xl font-bold text-white mb-3">Primi passi con Replenish for Work</h2>
+        <div class="space-y-6 text-sm text-slate-300 leading-relaxed">
+          <div class="p-5 rounded-xl bg-slate-900 border border-slate-800">
+            <h3 class="text-base font-bold text-emerald-400 mb-2">Passo 1: Aggiungi un articolo</h3>
+            <p>Fai clic su «Nuovo articolo» e inserisci nome, frequenza di rinnovo (giorni, settimane, mesi) e data d'inizio. In alternativa puoi scegliere un modello di settore già configurato.</p>
+          </div>
+          <div class="p-5 rounded-xl bg-slate-900 border border-slate-800">
+            <h3 class="text-base font-bold text-emerald-400 mb-2">Passo 2: Imposta i tempi di consegna (Lead Time)</h3>
+            <p>Inserisci i giorni medi necessari al fornitore per consegnare. L'app ti avviserà tempestivamente per riordinare prima dell'esaurimento effettivo.</p>
+          </div>
+          <div class="p-5 rounded-xl bg-slate-900 border border-slate-800">
+            <h3 class="text-base font-bold text-emerald-400 mb-2">Passo 3: Conferma il rinnovo con un tocco</h3>
+            <p>Quando sostituisci il materiale con uno nuovo, tocca semplicemente «Rinnovato oggi». La scadenza successiva verrà ricalcolata e memorizzata nella cronologia.</p>
+          </div>
+          <div class="p-5 rounded-xl bg-slate-900 border border-slate-800">
+            <h3 class="text-base font-bold text-emerald-400 mb-2">Passo 4: Aggiungi alla schermata Home (PWA)</h3>
+            <p>Dal menu del browser del tuo telefono o tablet scegli «Aggiungi alla schermata Home» per avviarla a pieno schermo come una vera applicazione.</p>
+          </div>
+        </div>
+      `;
     } else {
       bodyContent = `
         <h2 class="text-xl font-bold text-white mb-3">Getting Started with Replenish for Work</h2>
@@ -1336,14 +1576,18 @@ export default {
       }
     }
 
-    // Determine language (ja, en, fr, de)
+    // Determine language (ja, en, fr, de, it)
     let lang = "ja";
-    if (pathname === "/de" || pathname.startsWith("/de/")) {
+    if (pathname === "/it" || pathname.startsWith("/it/")) {
+      lang = "it";
+    } else if (pathname === "/de" || pathname.startsWith("/de/")) {
       lang = "de";
     } else if (pathname === "/fr" || pathname.startsWith("/fr/")) {
       lang = "fr";
     } else if (pathname === "/en" || pathname.startsWith("/en/")) {
       lang = "en";
+    } else if (url.searchParams.get("lang") === "it") {
+      lang = "it";
     } else if (url.searchParams.get("lang") === "de") {
       lang = "de";
     } else if (url.searchParams.get("lang") === "fr") {
@@ -1354,7 +1598,11 @@ export default {
 
     // Normalize route path without language prefix
     let cleanPath = pathname;
-    if (cleanPath.startsWith("/de/")) {
+    if (cleanPath.startsWith("/it/")) {
+      cleanPath = "/" + cleanPath.slice(4);
+    } else if (cleanPath === "/it") {
+      cleanPath = "/";
+    } else if (cleanPath.startsWith("/de/")) {
       cleanPath = "/" + cleanPath.slice(4);
     } else if (cleanPath === "/de") {
       cleanPath = "/";
