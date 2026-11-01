@@ -9,6 +9,7 @@ const URL_RPW_DE = "https://rpwde.easy-log.app/";
 const URL_RPW_IT = "https://rpwit.easy-log.app/";
 const URL_RPW_ES = "https://rpwes.easy-log.app/";
 const URL_RPW_PT = "https://rpwpt.easy-log.app/";
+const URL_RPW_NL = "https://rpwnl.easy-log.app/";
 const URL_RP_PORTAL = "https://rp.easy-log.app/";
 const URL_RP_JP = "https://rpjp.easy-log.app/";
 const URL_RP_EN = "https://rpen.easy-log.app/";
@@ -51,6 +52,8 @@ const LANG_CONFIG = {
     launchEsBtn: "Apri versione spagnola (Gratis)",
     launchPtTitle: "Replenish for Work (Portoghese)",
     launchPtBtn: "Apri versione portoghese (Gratis)",
+    launchNlTitle: "Replenish for Work (Olandese)",
+    launchNlBtn: "Apri versione olandese (Gratis)",
 
     industriesBadge: "業種別プリセットですぐに使える",
     industriesTitle: "あらゆるビジネス現場の消耗品に対応",
@@ -514,6 +517,136 @@ const LANG_CONFIG = {
     contactTitle: "Kontakt",
     guideTitle: "Leitfaden"
   },
+
+  nl: {
+    code: "nl",
+    label: "Nederlands",
+    flag: "🇳🇱",
+    homePath: "/nl",
+    privacyPath: "/nl/privacy",
+    termsPath: "/nl/terms",
+    aboutPath: "/nl/about",
+    contactPath: "/nl/contact",
+    guidePath: "/nl/guide",
+    brandTitle: "Replenish for Work",
+    brandSubtitle: "Slim portaal voor voorraadbeheer en tijdige vervanging voor bedrijven",
+    pageTitle: "Replenish for Work Portal - Slim beheer van verbruiksartikelen & voorraad | 100% Gratis en Lokaal",
+    pageDesc: "Optimaliseer vervangingscycli en bereken levertijden voor kantoren, praktijken, horeca en werkplaatsen in Nederland en Vlaanderen. Nooit meer zonder voorraad, 100% veilig op uw eigen apparaat.",
+    heroBadge: "Geen voorraadtekorten meer en bestellingen bij leveranciers altijd op tijd",
+    heroTitle: 'Plan verbruikscycli en inventaris<br><span class="bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 bg-clip-text text-transparent">met maximale precisie en eenvoud.</span>',
+    heroDesc: "Kantoorartikelen, medisch materiaal, horeca-hygiëne of werkplaatsonderdelen: bereken automatisch vervangingsdatums en plan bestellingen met de ideale doorlooptijd.",
+    navHome: "Home",
+    navIndustries: "Sectoren",
+    navFeatures: "Voordelen",
+    navFaq: "Veelgestelde vragen",
+    navLaunch: "App starten",
+
+    launchJpTitle: "Replenish for Work (Japans)",
+    launchJpBtn: "Japanse versie (Gratis)",
+    launchEnTitle: "Replenish for Work (Engels)",
+    launchEnBtn: "Engelse versie (Gratis)",
+    launchFrTitle: "Replenish for Work (Frans)",
+    launchFrBtn: "Franse versie (Gratis)",
+    launchDeTitle: "Replenish for Work (Duits)",
+    launchDeBtn: "Duitse versie (Gratis)",
+    launchItTitle: "Replenish for Work (Italiaans)",
+    launchItBtn: "Italiaanse versie (Gratis)",
+    launchEsTitle: "Replenish for Work (Spaans)",
+    launchEsBtn: "Spaanse versie (Gratis)",
+    launchPtTitle: "Replenish for Work (Portugees)",
+    launchPtBtn: "Portugese versie (Gratis)",
+    launchNlTitle: "Replenish for Work (Nederlands)",
+    launchNlBtn: "Nederlandse versie openen (Gratis)",
+
+    industriesBadge: "Direct inzetbare branche-sjablonen",
+    industriesTitle: "Ontworpen voor elke professionele werkomgeving",
+    industriesSub: "Pas met één klik aanbevolen cycli en verbruiksartikelen toe voor uw sector en stem ze naar wens af.",
+
+    industries: [
+      {
+        icon: "🏢",
+        name: "Kantoor & Administratie",
+        desc: "Kopieerpapier A4, lasertoner, shredderolie, waterfilters en bureau-accessoires",
+        tag: "Kostenbeheersing"
+      },
+      {
+        icon: "🏥",
+        name: "Praktijk, Kliniek & Apotheek",
+        desc: "Nitrilhandschoenen, handalcohol, autoclaafzakken, naalden en mondmaskers",
+        tag: "Hygiëne & Veiligheid"
+      },
+      {
+        icon: "🍽️",
+        name: "Horeca, Restaurant & Café",
+        desc: "Ontkalkingsfilters espressomachine, vaatwasmiddel, handdoekrollen en desinfectiemiddelen",
+        tag: "HACCP & Hygiëne"
+      },
+      {
+        icon: "💇",
+        name: "Kapsalon & Schoonheidsstudio",
+        desc: "Wegwerphanddoeken, knipmantels, handschoenen, scharendesinfectie en scheermesjes",
+        tag: "Servicekwaliteit"
+      },
+      {
+        icon: "🏭",
+        name: "Werkplaats & Technische Dienst",
+        desc: "Remmenreiniger, industriële poetsdoeken, technische smeermiddelen, slijpschijven en PBM",
+        tag: "Maximale inzetbaarheid"
+      },
+      {
+        icon: "🏨",
+        name: "Hotel & Gastenverblijf",
+        desc: "Gastencosmetica (amenities), wasmiddelen, kamerslippers, hygiënezakjes en luchtfilters",
+        tag: "Kwaliteitsstandaard"
+      }
+    ],
+
+    featuresBadge: "Belangrijkste voordelen",
+    featuresTitle: "Waarom professionals kiezen voor Replenish for Work",
+    feat1Title: "Slimme waarschuwingen op basis van levertijd van leveranciers",
+    feat1Desc: "Pas bestellen wanneer een artikel al op is verstoort de bedrijfsvoering. Wij berekenen de ideale besteldatum op basis van de doorlooptijd van uw leverancier.",
+    feat2Title: "100% Lokale en veilige opslag (Geen verzending naar externe servers)",
+    feat2Desc: "Al uw voorraadlijsten, inkoopkosten, leveranciers en memo's blijven strikt bewaard in de lokale IndexedDB van uw browser. Volledige vertrouwelijkheid.",
+    feat3Title: "PWA-compatibel & werkt volledig offline",
+    feat3Desc: "Installeerbaar als app op tablets in het magazijn, de werkplaats of achter de balie. Blijft werken op locaties zonder actieve internetverbinding.",
+    feat4Title: "100% Gratis zonder registratie of account",
+    feat4Desc: "Geen maandelijkse abonnementskosten per gebruiker, geen verborgen clausules en geen creditcard vereist. Start direct in uw webbrowser.",
+
+    faqBadge: "FAQ",
+    faqTitle: "Veelgestelde vragen",
+    faqs: [
+      {
+        q: "Q. Zijn de gegevens van ons bedrijf en onze leveranciers veilig?",
+        a: "Absoluut. Replenish for Work hanteert een strikte client-side architectuur: uw artikelen, leveranciersgegevens, prijzen en notities worden uitsluitend in de lokale IndexedDB van uw eigen browser opgeslagen en verlaten uw apparaat nooit."
+      },
+      {
+        q: "Q. Kunnen we een back-up exporteren naar een andere computer?",
+        a: "Ja. Via het menu «Gegevensbeheer» kunt u met één klik een open JSON-bestand downloaden en direct importeren op elk ander werkstation of tablet."
+      },
+      {
+        q: "Q. Is deze applicatie werkelijk volledig kosteloos voor zakelijk gebruik?",
+        a: "Ja, 100% gratis zonder limiet op het aantal artikelen en zonder verborgen kosten."
+      },
+      {
+        q: "Q. Wat is het verschil met de consumentenversie van Replenish?",
+        a: "De consumentenversie is gericht op het huishouden. Replenish for Work biedt specifieke zakelijke functies: bestelwaarschuwingen met doorlooptijd (Lead Time), minimale veiligheidsvoorraad, branche-sjablonen en leveranciersbeheer."
+      }
+    ],
+
+    ctaTitle: "Voorkom voorraadtekorten en bestelstress vanaf vandaag.",
+    ctaDesc: "Zonder registratie of ingewikkelde configuratie. Open de tool direct gratis in uw browser.",
+    ctaBtn: "Direct starten met Replenish for Work",
+    familyTitle: "Zoekt u een oplossing voor thuis?",
+    familyDesc: "Ontdek Replenish Home voor het beheer van toiletartikelen, verzorging en de voorraadkast voor uw huishouden.",
+    familyBtn: "Bezoek het Replenish Home portaal",
+
+    footerDisclaimer: "Replenish for Work is een hulpmiddel voor het tijdig vervangen en bestellen van zakelijke verbruiksartikelen. Gegevens worden uitsluitend lokaal op uw apparaat bewaard.",
+    privacyTitle: "Privacybeleid",
+    termsTitle: "Algemene Voorwaarden",
+    aboutTitle: "Over Ons",
+    contactTitle: "Contact & Ondersteuning",
+    guideTitle: "Handleiding"
+  },
   pt: {
     code: "pt",
     label: "Português",
@@ -551,6 +684,8 @@ const LANG_CONFIG = {
     launchEsBtn: "Versão espanhola (Grátis)",
     launchPtTitle: "Replenish for Work (Português)",
     launchPtBtn: "Abrir versão em português (Grátis)",
+    launchNlTitle: "Replenish for Work (Holandês)",
+    launchNlBtn: "Abrir versão em holandês (Grátis)",
 
     industriesBadge: "Modelos de setor prontos a usar",
     industriesTitle: "Concebido para qualquer ambiente profissional",
@@ -893,6 +1028,50 @@ const LANG_CONFIG = {
   }
 };
 
+
+const TRUST_BADGES = {
+  free: {
+    nl: "100% Gratis voor altijd",
+    pt: "100% Gratuito para sempre",
+    es: "100% Gratuito para siempre",
+    it: "100% Gratuito per sempre",
+    de: "100% Kostenlos ohne Abo",
+    fr: "100% Gratuit sans frais",
+    en: "100% Free Forever",
+    ja: "完全無料（課金なし）"
+  },
+  noAccount: {
+    nl: "Geen account vereist",
+    pt: "Sem registo obrigatório",
+    es: "Sin registro previo",
+    it: "Senza registrazione",
+    de: "Ohne Registrierung",
+    fr: "Sans inscription",
+    en: "No Account Needed",
+    ja: "登録不要（即日開始）"
+  },
+  local: {
+    nl: "100% Lokale gegevensopslag",
+    pt: "Privacidade 100% no dispositivo",
+    es: "Privacidad 100% en el dispositivo",
+    it: "Privacy 100% sul dispositivo",
+    de: "100% Lokaler Datenschutz",
+    fr: "Stockage local 100% privé",
+    en: "100% Private Local Storage",
+    ja: "端末内ローカル保存（情報送信ゼロ）"
+  },
+  pwa: {
+    nl: "PWA & Volledig offline gereed",
+    pt: "Compatível com PWA e offline",
+    es: "Compatible PWA y sin conexión",
+    it: "PWA & Offline garantito",
+    de: "PWA & Offline einsatzbereit",
+    fr: "Prêt PWA & Hors-ligne",
+    en: "PWA & Offline Ready",
+    ja: "PWAオフライン動作対応"
+  }
+};
+
 function renderHeader(lang) {
   const cfg = LANG_CONFIG[lang] || LANG_CONFIG.ja;
   const langs = [
@@ -902,7 +1081,8 @@ function renderHeader(lang) {
     { code: "de", path: "/de", flag: "🇩🇪", label: "DE" },
     { code: "it", path: "/it", flag: "🇮🇹", label: "IT" },
     { code: "es", path: "/es", flag: "🇪🇸", label: "ES" },
-    { code: "pt", path: "/pt", flag: "🇵🇹", label: "PT" }
+    { code: "pt", path: "/pt", flag: "🇵🇹", label: "PT" },
+    { code: "nl", path: "/nl", flag: "🇳🇱", label: "NL" }
   ];
 
   let appUrl = URL_RPW_JP;
@@ -912,6 +1092,7 @@ function renderHeader(lang) {
   if (lang === "it") appUrl = URL_RPW_IT;
   if (lang === "es") appUrl = URL_RPW_ES;
   if (lang === "pt") appUrl = URL_RPW_PT;
+  if (lang === "nl") appUrl = URL_RPW_NL;
 
   return `
   <header class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 text-white">
@@ -1160,19 +1341,33 @@ function renderPortalPage(lang) {
           </span>
         </a>
 
-                        <!-- Portuguese Edition -->
-        <a href="${URL_RPW_PT}" class="group relative flex flex-col items-center justify-center p-4 rounded-2xl bg-gradient-to-b from-slate-800 to-slate-850 border border-emerald-500/40 hover:border-emerald-400 shadow-xl shadow-emerald-950/50 hover:shadow-emerald-900/40 transition-all hover:-translate-y-1 text-center">
+                        
+        <!-- Dutch Edition -->
+        <a href="${URL_RPW_NL}" class="group relative flex flex-col items-center justify-center p-4 rounded-2xl bg-gradient-to-b from-slate-800 to-slate-850 border border-emerald-500/40 hover:border-emerald-400 shadow-xl shadow-emerald-950/50 hover:shadow-emerald-900/40 transition-all hover:-translate-y-1 text-center">
           <div class="flex items-center gap-1.5 mb-1.5">
-            <span class="text-xl">🇵🇹</span>
-            <span class="text-[11px] font-bold text-emerald-400 uppercase tracking-wider">PT / Português</span>
+            <span class="text-xl">🇳🇱</span>
+            <span class="text-[11px] font-bold text-emerald-400 uppercase tracking-wider">NL / Nederlands</span>
           </div>
-          <span class="text-xs sm:text-sm font-bold text-white mb-1 line-clamp-1">${cfg.launchPtTitle}</span>
+          <span class="text-xs sm:text-sm font-bold text-white mb-1 line-clamp-1">${cfg.launchNlTitle}</span>
           <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-300 group-hover:text-emerald-200 mt-1">
-            <span>${cfg.launchPtBtn}</span>
+            <span>${cfg.launchNlBtn}</span>
             <svg class="w-3 h-3 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
           </span>
         </a>
 
+          ${TRUST_BADGES.free[lang] || TRUST_BADGES.free.ja}
+        <a href="${URL_RPW_PT}" class="group relative flex flex-col items-center justify-center p-4 rounded-2xl bg-gradient-to-b from-slate-800 to-slate-850 border border-emerald-500/40 hover:border-emerald-400 shadow-xl shadow-emerald-950/50 hover:shadow-emerald-900/40 transition-all hover:-translate-y-1 text-center">
+          <div class="flex items-center gap-1.5 mb-1.5">
+            <span class="text-xl">🇵🇹</span>
+          ${TRUST_BADGES.noAccount[lang] || TRUST_BADGES.noAccount.ja}
+          </div>
+          <span class="text-xs sm:text-sm font-bold text-white mb-1 line-clamp-1">${cfg.launchPtTitle}</span>
+          <span class="inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-300 group-hover:text-emerald-200 mt-1">
+          ${TRUST_BADGES.local[lang] || TRUST_BADGES.local.ja}
+            <svg class="w-3 h-3 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </span>
+        </a>
+          ${TRUST_BADGES.pwa[lang] || TRUST_BADGES.pwa.ja}
         <!-- Spanish Edition -->
         <a href="${URL_RPW_ES}" class="group relative flex flex-col items-center justify-center p-4 rounded-2xl bg-gradient-to-b from-slate-800 to-slate-850 border border-amber-500/40 hover:border-amber-400 shadow-xl shadow-amber-950/50 hover:shadow-amber-900/40 transition-all hover:-translate-y-1 text-center">
           <div class="flex items-center gap-1.5 mb-1.5">
@@ -1204,19 +1399,19 @@ function renderPortalPage(lang) {
       <div class="flex flex-wrap items-center justify-center gap-6 text-xs font-medium text-slate-400">
         <span class="inline-flex items-center gap-1.5">
           <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-          ${lang === "pt" ? "100% Gratuito para sempre" : (lang === "es" ? "100% Gratuito para siempre" : (lang === "it" ? "100% Gratuito per sempre" : (lang === "de" ? "100% Kostenlos ohne Abo" : (lang === "fr" ? "100% Gratuit sans frais" : (lang === "en" ? "100% Free Forever" : "完全無料（課金なし）")))))}
+          ${TRUST_BADGES.free[lang] || TRUST_BADGES.free.ja}
         </span>
         <span class="inline-flex items-center gap-1.5">
           <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-          ${lang === "pt" ? "Sem registo obrigatório" : (lang === "es" ? "Sin registro previo" : (lang === "it" ? "Senza registrazione" : (lang === "de" ? "Ohne Registrierung" : (lang === "fr" ? "Sans inscription" : (lang === "en" ? "No Account Needed" : "登録不要（即日開始）")))))}
+          ${TRUST_BADGES.noAccount[lang] || TRUST_BADGES.noAccount.ja}
         </span>
         <span class="inline-flex items-center gap-1.5">
           <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-          ${lang === "pt" ? "Privacidade 100% no dispositivo" : (lang === "es" ? "Privacidad 100% en el dispositivo" : (lang === "it" ? "Privacy 100% sul dispositivo" : (lang === "de" ? "100% Lokaler Datenschutz" : (lang === "fr" ? "Stockage local 100% privé" : (lang === "en" ? "100% Private Local Storage" : "端末内ローカル保存（情報送信ゼロ）")))))}
+          ${TRUST_BADGES.local[lang] || TRUST_BADGES.local.ja}
         </span>
         <span class="inline-flex items-center gap-1.5">
           <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-          ${lang === "pt" ? "Compatível com PWA e offline" : (lang === "es" ? "Compatible PWA y sin conexión" : (lang === "it" ? "PWA & Offline garantito" : (lang === "de" ? "PWA & Offline einsatzbereit" : (lang === "fr" ? "Prêt PWA & Hors-ligne" : (lang === "en" ? "PWA & Offline Ready" : "PWAオフライン動作対応")))))}
+          ${TRUST_BADGES.pwa[lang] || TRUST_BADGES.pwa.ja}
         </span>
       </div>
     </div>
@@ -1365,6 +1560,7 @@ function renderLegalPage(type, lang) {
   const isIt = lang === "it";
   const isEs = lang === "es";
   const isPt = lang === "pt";
+  const isNl = lang === "nl";
 
   let titles = {};
   if (isJa) {
@@ -1890,7 +2086,9 @@ export default {
 
     // Determine language (ja, en, fr, de, it)
     let lang = "ja";
-    if (pathname === "/pt" || pathname.startsWith("/pt/")) {
+    if (pathname === "/nl" || pathname.startsWith("/nl/")) {
+      lang = "nl";
+    } else if (pathname === "/pt" || pathname.startsWith("/pt/")) {
       lang = "pt";
     } else if (pathname === "/es" || pathname.startsWith("/es/")) {
       lang = "es";
@@ -1902,6 +2100,8 @@ export default {
       lang = "fr";
     } else if (pathname === "/en" || pathname.startsWith("/en/")) {
       lang = "en";
+    } else if (url.searchParams.get("lang") === "nl") {
+      lang = "nl";
     } else if (url.searchParams.get("lang") === "pt") {
       lang = "pt";
     } else if (url.searchParams.get("lang") === "es") {
@@ -1918,7 +2118,11 @@ export default {
 
     // Normalize route path without language prefix
     let cleanPath = pathname;
-    if (cleanPath.startsWith("/pt/")) {
+    if (cleanPath.startsWith("/nl/")) {
+      cleanPath = "/" + cleanPath.slice(4);
+    } else if (cleanPath === "/nl") {
+      cleanPath = "/";
+    } else if (cleanPath.startsWith("/pt/")) {
       cleanPath = "/" + cleanPath.slice(4);
     } else if (cleanPath === "/pt") {
       cleanPath = "/";
