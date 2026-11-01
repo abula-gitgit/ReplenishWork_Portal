@@ -1694,6 +1694,57 @@ function renderLegalPage(type, lang) {
           Per monitorare le performance e l'affidabilità della piattaforma possono essere impiegate metriche di traffico totalmente anonimizzate (ad es. Cloudflare Web Analytics), che non raccolgono alcun dato identificativo dell'utente.
         </p>
       `;
+    } else if (isEs) {
+      bodyContent = `
+        <h2 class="text-xl font-bold text-white mb-3">1. Privacidad y Almacenamiento 100% Local</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Replenish for Work ha sido diseñado con un enfoque estricto en la protección de la privacidad (conforme al RGPD). Toda la información introducida —artículos consumibles, plazos de entrega de proveedores, costes, ubicaciones de almacenamiento y notas— se almacena de forma exclusiva en la memoria IndexedDB de su navegador web. En ningún caso se transmiten ni guardan datos de su empresa en servidores externos.
+        </p>
+
+        <h2 class="text-xl font-bold text-white mb-3">2. Publicidad y Cookies</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Con el fin de mantener este servicio totalmente gratuito, podemos mostrar anuncios a través de redes publicitarias de terceros (como Google AdSense). Estos proveedores pueden utilizar cookies técnicas para ofrecer anuncios pertinentes. Puede gestionar o desactivar el uso de cookies en cualquier momento desde la configuración de su navegador.
+        </p>
+
+        <h2 class="text-xl font-bold text-white mb-3">3. Análisis de Tráfico y Rendimiento</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Para garantizar la disponibilidad y velocidad del servicio, podemos emplear herramientas de métricas de tráfico totalmente anonimizadas (por ejemplo, Cloudflare Web Analytics). Estas mediciones no recopilan datos personales identificables.
+        </p>
+      `;
+    } else if (isPt) {
+      bodyContent = `
+        <h2 class="text-xl font-bold text-white mb-3">1. Privacidade e Armazenamento 100% Local</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          O Replenish for Work foi desenvolvido com base em princípios rigorosos de proteção de dados (RGPD). Todos os dados registados — artigos consumíveis, prazos de entrega dos fornecedores, custos, locais de arrumação e notas — permanecem guardados exclusivamente no IndexedDB local do seu navegador. Não há qualquer transmissão ou gravação de informações comerciais em servidores externos.
+        </p>
+
+        <h2 class="text-xl font-bold text-white mb-3">2. Publicidade e Cookies</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Para disponibilizar esta ferramenta gratuitamente, podemos apresentar anúncios geridos por plataformas de terceiros (como o Google AdSense). Estes serviços podem utilizar cookies para apresentar publicidade contextual. O utilizador pode desativar o uso de cookies a qualquer momento nas definições do seu navegador.
+        </p>
+
+        <h2 class="text-xl font-bold text-white mb-3">3. Análise de Desempenho e Tráfego</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Poderão ser utilizadas ferramentas de medição de tráfego totalmente anónimas (ex. Cloudflare Web Analytics) para assegurar a rapidez e fiabilidade da plataforma, sem recolha de qualquer dado de identificação pessoal.
+        </p>
+      `;
+    } else if (isNl) {
+      bodyContent = `
+        <h2 class="text-xl font-bold text-white mb-3">1. Privacy & 100% Lokale Opslag</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Replenish for Work is ontworpen volgens strenge normen voor gegevensbescherming (AVG/GDPR). Al uw geregistreerde verbruiksartikelen, doorlooptijden van leveranciers, inkoopkosten, opslaglocaties en memo's blijven uitsluitend bewaard in de lokale IndexedDB van uw eigen browser. Er vindt geen overdracht naar of opslag op externe servers plaats.
+        </p>
+
+        <h2 class="text-xl font-bold text-white mb-3">2. Advertenties & Cookies</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Om deze dienst gratis aan te kunnen bieden, kunnen we advertentienetwerken van derden (zoals Google AdSense) tonen. Deze partijen kunnen technische cookies gebruiken om relevante advertenties weer te geven. U kunt het gebruik van cookies op elk gewenst moment uitschakelen in de instellingen van uw webbrowser.
+        </p>
+
+        <h2 class="text-xl font-bold text-white mb-3">3. Toegangsanalyse & Statistieken</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Met het oog op betrouwbaarheid en prestaties kunnen anonieme verkeersstatistieken (bijv. Cloudflare Web Analytics) worden gebruikt. Hierbij worden geen identificeerbare persoonsgegevens vastgelegd.
+        </p>
+      `;
     } else {
       bodyContent = `
         <h2 class="text-xl font-bold text-white mb-3">1. Privacy & Client-Side Storage</h2>
@@ -1706,9 +1757,9 @@ function renderLegalPage(type, lang) {
           We may display third-party advertisements (such as Google AdSense). These third-party vendors may use cookies to serve ads based on prior visits. Users can disable personalized cookies in their browser settings.
         </p>
 
-        <h2 class="text-xl font-bold text-white mb-3">3. Analytics</h2>
+        <h2 class="text-xl font-bold text-white mb-3">3. Anonymous Analytics</h2>
         <p class="text-sm text-slate-300 leading-relaxed mb-6">
-          Privacy-respecting anonymous traffic metrics (e.g., Cloudflare Web Analytics) may be used to measure performance. No personal or device-identifiable information is collected.
+          To maintain reliable uptime and optimal performance, we may use privacy-preserving analytics (such as Cloudflare Web Analytics). These measurements never track identifiable personal credentials.
         </p>
       `;
     }
@@ -1779,6 +1830,52 @@ function renderLegalPage(type, lang) {
         <h2 class="text-xl font-bold text-white mb-3">3. Modifiche del servizio</h2>
         <p class="text-sm text-slate-300 leading-relaxed mb-6">
           L'editore si riserva il diritto di aggiornare, modificare o sospendere le funzionalità dell'applicazione in qualsiasi momento senza obbligo di preavviso.
+        </p>
+      `;
+    
+    } else if (isEs) {
+      bodyContent = `
+        <h2 class="text-xl font-bold text-white mb-3">1. Condiciones de Uso</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Replenish for Work es una herramienta gratuita para facilitar la gestión periódica del ciclo de vida e inventario de consumibles y recambios profesionales. El uso del servicio se realiza bajo la exclusiva responsabilidad del usuario.
+        </p>
+        <h2 class="text-xl font-bold text-white mb-3">2. Exención de Responsabilidad</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Los ciclos de sustitución y plazos recomendados son estimaciones de referencia. El usuario es responsable de verificar los requisitos legales, normativas sanitarias y directrices del fabricante aplicables a su sector.
+        </p>
+        <h2 class="text-xl font-bold text-white mb-3">3. Respaldo de Datos</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Dado que los datos se almacenan exclusivamente en su navegador local, se recomienda realizar copias de seguridad periódicas mediante la función de exportación JSON.
+        </p>
+      `;
+    } else if (isPt) {
+      bodyContent = `
+        <h2 class="text-xl font-bold text-white mb-3">1. Condições de Utilização</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          O Replenish for Work é uma aplicação gratuita destinada a simplificar a calendarização e reposição de artigos consumíveis no âmbito profissional. A utilização da ferramenta é da inteira responsabilidade do utilizador.
+        </p>
+        <h2 class="text-xl font-bold text-white mb-3">2. Limitação de Responsabilidade</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Os prazos e intervalos de substituição recomendados são meramente indicativos. Compete ao utilizador confirmar os requisitos de conformidade técnica, higiene e segurança aplicáveis ao seu setor.
+        </p>
+        <h2 class="text-xl font-bold text-white mb-3">3. Salvaguarda de Informação</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Como os dados são armazenados apenas no navegador do dispositivo, recomendamos a exportação periódica de cópias de segurança em formato JSON.
+        </p>
+      `;
+    } else if (isNl) {
+      bodyContent = `
+        <h2 class="text-xl font-bold text-white mb-3">1. Gebruiksvoorwaarden</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Replenish for Work is een kosteloos digitaal hulpmiddel voor het beheren van vervangingscycli en voorraad van zakelijke verbruiksartikelen. Het gebruik van deze applicatie geschiedt geheel op eigen verantwoordelijkheid van de gebruiker.
+        </p>
+        <h2 class="text-xl font-bold text-white mb-3">2. Disclaimer & Aansprakelijkheid</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          De getoonde vervangingscycli zijn indicatieve adviesrichtlijnen. De gebruiker blijft zelf verantwoordelijk voor de naleving van geldende sectorspecifieke wet- en regelgeving, hygiënevoorschriften en fabrikantinstructies.
+        </p>
+        <h2 class="text-xl font-bold text-white mb-3">3. Gegevensback-up</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Omdat alle gegevens uitsluitend lokaal op uw apparaat worden opgeslagen, adviseren wij regelmatig een back-up te exporteren via de JSON-exportfunctionaliteit.
         </p>
       `;
     } else {
@@ -1852,6 +1949,46 @@ function renderLegalPage(type, lang) {
           <div class="flex"><span class="w-36 text-slate-400 font-bold">Prezzo:</span><span class="text-white">100% Gratuito (Senza registrazione)</span></div>
         </div>
       `;
+    
+    } else if (isEs) {
+      bodyContent = `
+        <h2 class="text-xl font-bold text-white mb-3">Sobre Replenish for Work</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Replenish for Work es una aplicación web concebida para que empresas, comercios, clínicas, restaurantes y talleres planifiquen con exactitud cuándo sustituir y reordenar sus materiales consumibles sin sufrir interrupciones en su actividad.
+        </p>
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 text-sm space-y-2 text-slate-300">
+          <p><strong class="text-white">Nombre del servicio:</strong> Replenish for Work (Edición en Español)</p>
+          <p><strong class="text-white">Precio:</strong> 100% Gratuito (sin suscripción)</p>
+          <p><strong class="text-white">Arquitectura:</strong> Almacenamiento local privado en navegador (IndexedDB)</p>
+          <p><strong class="text-white">Contacto:</strong> support@easy-log.app</p>
+        </div>
+      `;
+    } else if (isPt) {
+      bodyContent = `
+        <h2 class="text-xl font-bold text-white mb-3">Sobre o Replenish for Work</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          O Replenish for Work foi criado para ajudar escritórios, unidades de saúde, restauração, salões e oficinas a gerir preventivamente a substituição de materiais sem registo de conta nem custos associados.
+        </p>
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 text-sm space-y-2 text-slate-300">
+          <p><strong class="text-white">Nome do serviço:</strong> Replenish for Work (Edição em Português)</p>
+          <p><strong class="text-white">Preço:</strong> 100% Gratuito (sem encargos ocultos)</p>
+          <p><strong class="text-white">Arquitetura:</strong> Armazenamento local seguro no navegador (IndexedDB)</p>
+          <p><strong class="text-white">Contacto:</strong> support@easy-log.app</p>
+        </div>
+      `;
+    } else if (isNl) {
+      bodyContent = `
+        <h2 class="text-xl font-bold text-white mb-3">Over Replenish for Work</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Replenish for Work is een innovatieve webapplicatie ontworpen voor kantoren, praktijken, horeca, detailhandel en werkplaatsen in Nederland en Vlaanderen om voorraadbeheer en tijdige vervanging van bedrijfsmiddelen moeiteloos te organiseren.
+        </p>
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 text-sm space-y-2 text-slate-300">
+          <p><strong class="text-white">Servicenaam:</strong> Replenish for Work (Nederlandse editie)</p>
+          <p><strong class="text-white">Kosten:</strong> 100% Gratis (geen abonnement of limieten)</p>
+          <p><strong class="text-white">Gegevensopslag:</strong> Lokaal en privé in uw webbrowser (IndexedDB)</p>
+          <p><strong class="text-white">Ondersteuning:</strong> support@easy-log.app</p>
+        </div>
+      `;
     } else {
       bodyContent = `
         <h2 class="text-xl font-bold text-white mb-3">About Replenish for Work</h2>
@@ -1909,6 +2046,40 @@ function renderLegalPage(type, lang) {
         <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 text-center">
           <span class="text-xs text-slate-400 block mb-2">Email di contatto</span>
           <a href="mailto:stoooone.studio@gmail.com" class="text-base sm:text-lg font-bold text-emerald-400 hover:underline font-mono">stoooone.studio@gmail.com</a>
+        </div>
+      `;
+    
+    } else if (isEs) {
+      bodyContent = `
+        <h2 class="text-xl font-bold text-white mb-3">Contacto y Asistencia</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Para consultas, sugerencias de mejora, nuevas plantillas de sector o soporte técnico, comuníquese con nosotros por correo electrónico:
+        </p>
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 text-center">
+          <span class="text-xs text-slate-400 block mb-1">Correo de soporte</span>
+          <a href="mailto:support@easy-log.app" class="text-lg font-bold text-emerald-400 hover:text-emerald-300 transition">support@easy-log.app</a>
+        </div>
+      `;
+    } else if (isPt) {
+      bodyContent = `
+        <h2 class="text-xl font-bold text-white mb-3">Contacto e Assistência</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Para dúvidas, sugestões de novos recursos, solicitação de novos modelos ou assistência técnica, envie-nos uma mensagem por e-mail:
+        </p>
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 text-center">
+          <span class="text-xs text-slate-400 block mb-1">E-mail de apoio</span>
+          <a href="mailto:support@easy-log.app" class="text-lg font-bold text-emerald-400 hover:text-emerald-300 transition">support@easy-log.app</a>
+        </div>
+      `;
+    } else if (isNl) {
+      bodyContent = `
+        <h2 class="text-xl font-bold text-white mb-3">Contact & Ondersteuning</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Heeft u vragen, feedback of verzoeken voor nieuwe branche-sjablonen? Neem gerust contact met ons op via onderstaand e-mailadres:
+        </p>
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 text-center">
+          <span class="text-xs text-slate-400 block mb-1">E-mailadres</span>
+          <a href="mailto:support@easy-log.app" class="text-lg font-bold text-emerald-400 hover:text-emerald-300 transition">support@easy-log.app</a>
         </div>
       `;
     } else {
