@@ -5,6 +5,7 @@ const DOMAIN = "rpw.easy-log.app";
 const URL_RPW_JP = "https://rpwjp.easy-log.app/";
 const URL_RPW_EN = "https://rpwen.easy-log.app/";
 const URL_RPW_FR = "https://rpwfr.easy-log.app/";
+const URL_RPW_DE = "https://rpwde.easy-log.app/";
 const URL_RP_PORTAL = "https://rp.easy-log.app/";
 const URL_RP_JP = "https://rpjp.easy-log.app/";
 const URL_RP_EN = "https://rpen.easy-log.app/";
@@ -39,6 +40,8 @@ const LANG_CONFIG = {
     launchEnBtn: "Launch English Edition (Free)",
     launchFrTitle: "Replenish for Work (Français)",
     launchFrBtn: "Lancer l'application française (Gratuit)",
+    launchDeTitle: "Replenish for Work (Deutsch)",
+    launchDeBtn: "Deutsche App starten (Kostenlos)",
 
     industriesBadge: "業種別プリセットですぐに使える",
     industriesTitle: "あらゆるビジネス現場の消耗品に対応",
@@ -98,33 +101,33 @@ const LANG_CONFIG = {
     faqTitle: "よくあるご質問",
     faqs: [
       {
-        q: "Q. 企業の機密情報や発注データが社外に漏洩する心配はありませんか？",
-        a: "ありません。Replenish for Workはサーバーレス・ローカル完結型アーキテクチャを採用しており、登録された品名、保管場所、価格、発注先などのデータはすべて操作端末のブラウザ内部（IndexedDB）にのみ保存されます。外部サーバーへの送信は一切行われません。"
+        q: "Q. 企業の機密情報や発注データが外部に漏れる心配はありませんか？",
+        a: "ありません。Replenish for Workはサーバーとのデータ通信を一切行わない完全クライアントサイド動作（IndexedDB保存）です。社外秘の備品名や調達先、単価などのデータは、お使いの端末内部から外へ送信されることはありません。"
       },
       {
-        q: "Q. 複数台の端末（PCや現場のタブレット）でデータを移行・共有できますか？",
-        a: "はい。設定画面からワンタップで「バックアップ（JSON）」のエクスポートおよびインポートが可能です。定期的なバックアップや、別端末への環境移行も簡単に行えます。"
+        q: "Q. 登録したデータはバックアップや別端末への引き継ぎができますか？",
+        a: "はい、可能です。ヘッダーの「バックアップ」機能から、登録済みの全データをJSONファイルとしてエクスポート・インポートできます。PCの入れ替え時や定期的な安全保存にご利用ください。"
       },
       {
-        q: "Q. 本当に完全無料で使い続けられますか？",
-        a: "はい。すべての機能を無料・無制限でご利用いただけます。アカウント課金やアイテム数制限などの課金要素は一切ありません。"
+        q: "Q. 本当にずっと無料で利用できますか？有料版への誘導はありませんか？",
+        a: "完全無料でお使いいただけます。登録品目数の上限や機能制限、ユーザー課金などは一切設けておりません。"
       },
       {
-        q: "Q. 個人向けReplenish（家庭用）との違いは何ですか？",
-        a: "個人向け「Replenish」が家庭の日用品サイクルに特化しているのに対し、「Replenish for Work」は納品リードタイムの考慮、業種別プリセット、保管場所別の分類、発注点アラートなど、ビジネス・現場の運用に最適化されています。"
+        q: "Q. 家庭用の「Replenish」とは何が違うのですか？",
+        a: "家庭版が洗面・台所などの日用品を中心としているのに対し、「for Work」では発注リードタイム（納品前準備）の逆算機能、安全在庫数、型番・発注先URLの管理、業界別テンプレートなど、事業所や店舗での実務に特化した機能群を備えています。"
       }
     ],
 
-    ctaTitle: "今日から現場の「備品切れ」トラブルをゼロに。",
-    ctaDesc: "面倒な手続きや初期設定は一切不要。今すぐ現場のブラウザから無料で使い始められます。",
-    ctaBtn: "今すぐ Replenish for Work を始める",
-    familyTitle: "個人・家庭向けモデルもご利用いただけます",
-    familyDesc: "ご家庭内の日用品・歯ブラシ・洗剤などの管理には、シンプルな「Replenish（家庭用）」をご活用ください。",
+    ctaTitle: "消耗品の欠品・管理ストレスから、現場を解放しよう。",
+    ctaDesc: "面倒なアカウント登録や初期設定は一切不要。今すぐ無料でお使いいただけます。",
+    ctaBtn: "Replenish for Work を始める",
+    familyTitle: "ご家庭用の消耗品管理をお探しですか？",
+    familyDesc: "シャンプー、洗剤、調味料、歯ブラシなどの家庭向け日用品サイクル管理は「Replenish（家庭版）」をご利用ください。",
     familyBtn: "家庭用 Replenish ポータルを見る",
 
-    footerDisclaimer: "Replenish for Work はビジネス現場・オフィスの消耗品交換・発注管理を支援するツールです。データはお使いのブラウザ内にのみ安全に保存されます。",
+    footerDisclaimer: "Replenish for Work は、オフィス・医療施設・店舗・工場などの消耗品および定期保守備品の管理を支援するツールです。入力されたデータはお使いの端末のブラウザ内のみに保存されます。",
     privacyTitle: "プライバシーポリシー",
-    termsTitle: "利用規約・免責事項",
+    termsTitle: "利用規約",
     aboutTitle: "運営者情報",
     contactTitle: "お問い合わせ",
     guideTitle: "ご利用ガイド"
@@ -140,12 +143,12 @@ const LANG_CONFIG = {
     contactPath: "/en/contact",
     guidePath: "/en/guide",
     brandTitle: "Replenish for Work",
-    brandSubtitle: "Workplace Consumables Cycle Manager Portal",
-    pageTitle: "Replenish for Work Portal - Office, Clinic & Facility Consumable Cycle Manager | 100% Free & Private",
-    pageDesc: "Streamline consumable replacement cycles and reorder deadlines for offices, clinics, kitchens, and workshops. Auto-calculate swap dates and buffer lead times. 100% free and local.",
-    heroBadge: "Eliminate Stockouts & Delayed Orders Across Workplaces",
-    heroTitle: 'Keep workplace consumables and supplies<br><span class="bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 bg-clip-text text-transparent">effortlessly replenished.</span>',
-    heroDesc: "From office supplies and clinical consumables to restaurant sanitation items and factory parts. Automatically calculate replacement dates and procurement deadlines based on lead times.",
+    brandSubtitle: "Enterprise & Workplace Supply Cycle Manager",
+    pageTitle: "Replenish for Work Portal - Supply & Maintenance Cycle Manager for Offices, Clinics & Industry | 100% Free & Local",
+    pageDesc: "Streamline workplace supply replacement cycles, automate reorder alerts, and track lead times. Designed for clinics, kitchens, offices, and factories. Zero server transmission.",
+    heroBadge: "Zero Stockouts, Zero Missed Reorders, Zero Server Risk",
+    heroTitle: 'Manage workplace supply cycles<br><span class="bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 bg-clip-text text-transparent">with automated precision.</span>',
+    heroDesc: "From office printing supplies to medical disposables, kitchen sanitation items, and shop-floor lubricants. Calculate replacement dates and buffer lead times with zero hassle.",
     navHome: "Home",
     navIndustries: "Industries",
     navFeatures: "Features",
@@ -153,99 +156,101 @@ const LANG_CONFIG = {
     navLaunch: "Launch App",
 
     launchJpTitle: "Replenish for Work (Japanese)",
-    launchJpBtn: "Launch Japanese App (Free)",
+    launchJpBtn: "Launch Japanese Edition (Free)",
     launchEnTitle: "Replenish for Work (English)",
-    launchEnBtn: "Launch English App (Free)",
-    launchFrTitle: "Replenish for Work (French)",
-    launchFrBtn: "Launch French App (Free)",
+    launchEnBtn: "Launch English Edition (Free)",
+    launchFrTitle: "Replenish for Work (Français)",
+    launchFrBtn: "Lancer l'application française (Gratuit)",
+    launchDeTitle: "Replenish for Work (Deutsch)",
+    launchDeBtn: "Deutsche App starten (Kostenlos)",
 
-    industriesBadge: "Industry-Specific Presets",
-    industriesTitle: "Tailored for Every Business Environment",
-    industriesSub: "Apply industry-standard replenishment cycles with a single click, then customize easily for your team.",
+    industriesBadge: "Ready-to-Use Industry Presets",
+    industriesTitle: "Tailored for Every Workplace Environment",
+    industriesSub: "One-click templates for common workplace cycles and essential items. Fully customizable to fit your business workflows.",
 
     industries: [
       {
         icon: "🏢",
-        name: "Corporate Office & Admin",
-        desc: "Copy paper, toner cartridges, shredder oil, whiteboard markers, water cooler filters, cleaning wipes",
+        name: "Office & Administration",
+        desc: "Copy paper, toner cartridges, shredder oil, whiteboard markers, water dispenser filters, and desk sanitizers",
         tag: "Cost Efficiency"
       },
       {
         icon: "🏥",
-        name: "Clinics, Dental & Pharmacy",
-        desc: "Medical gloves, antiseptic solutions, autoclave sterilization pouches, syringes, disposable masks",
-        tag: "Hygiene & Safety"
+        name: "Medical, Clinics & Pharmacy",
+        desc: "Exam gloves, medical disinfectants, autoclave pouches, syringes, suction tubing, and surgical masks",
+        tag: "Compliance & Safety"
       },
       {
         icon: "🍽️",
         name: "Restaurants, Cafes & Kitchens",
-        desc: "Water filters, grease trap strainers, sanitizer spray, food wrap, heavy-duty sponges, chef gloves",
-        tag: "HACCP Compliance"
+        desc: "Water filters, grease cleaners, food-grade sanitizers, fryer oil sheets, kitchen wipes, and nitrile gloves",
+        tag: "HACCP Hygiene"
       },
       {
         icon: "💇",
-        name: "Salons, Spas & Barber",
-        desc: "Neck strips, disposable towels, tint bowls, disinfectant spray, clipper blades, foil wraps",
-        tag: "Client Experience"
+        name: "Salons, Barber & Wellness",
+        desc: "Disposable towels, neck strips, color gloves, tool disinfectant, clipper blades, and skincare cotton",
+        tag: "Service Quality"
       },
       {
         icon: "🏭",
-        name: "Manufacturing & Maintenance",
-        desc: "Brake cleaner, industrial shop rags, abrasive pads, safety glasses, dust masks, lubricating oil",
+        name: "Manufacturing, Workshops & Auto",
+        desc: "Brake cleaner, shop rags, grinding discs, safety glasses, dust respirators, and cutting fluid lubricants",
         tag: "Zero Downtime"
       },
       {
         icon: "🏨",
         name: "Hotels & Hospitality",
-        desc: "Guest room amenities, housekeeping chemicals, slippers, air purifier HEPA filters, laundry supplies",
-        tag: "Quality Standards"
+        desc: "Guest amenities, housekeeping chemicals, disposable slippers, air purifier HEPA filters, and fresh linens",
+        tag: "Guest Standards"
       }
     ],
 
-    featuresBadge: "Core Advantages",
-    featuresTitle: "Why Organizations Choose Replenish for Work",
-    feat1Title: "Lead-Time Aware Procurement Alerts",
-    feat1Desc: "Ordering when supplies run empty creates workflow halts. We reverse-calculate purchase prep dates using supplier lead times so you reorder just in time.",
-    feat2Title: "100% Local & Secure (Zero Server Telemetry)",
-    feat2Desc: "All inventory items, pricing, notes, and locations are stored exclusively in your device's browser (IndexedDB). Zero external leakage risk.",
-    feat3Title: "PWA Ready & Offline First for Warehouses",
-    feat3Desc: "Add to home screen on tablets and phones without an app store. Operates flawlessly in basements, stockrooms, and remote job sites without internet.",
-    feat4Title: "100% Free with No Sign-Up Barrier",
-    feat4Desc: "No logins, passwords, employee seat licenses, or subscription fees. Start tracking in seconds right from your browser.",
+    featuresBadge: "Key Advantages",
+    featuresTitle: "Why Teams Rely on Replenish for Work",
+    feat1Title: "Vendor Lead-Time Procurement Buffer",
+    feat1Desc: "Ordering after running out halts operations. We calculate procurement alert dates back from the deadline so your team orders on time.",
+    feat2Title: "100% Client-Side Local Storage (Private)",
+    feat2Desc: "All data stays locked in your device's browser (IndexedDB). Zero external servers, zero database leakage risks, and full enterprise privacy.",
+    feat3Title: "PWA Offline Readiness for Tablets",
+    feat3Desc: "Install directly to home screen on warehouse tablets or phones. Operates seamlessly in basement stockrooms or areas with poor Wi-Fi.",
+    feat4Title: "100% Free with No Registration Required",
+    feat4Desc: "No user accounts, no per-seat pricing, and no credit cards. Simply open the URL and start tracking immediately.",
 
     faqBadge: "FAQ",
     faqTitle: "Frequently Asked Questions",
     faqs: [
       {
-        q: "Q. Is company data safe from external leaks?",
-        a: "Yes. Replenish for Work uses a privacy-first, client-only architecture. All item names, locations, costs, and vendor notes remain strictly within your device's browser storage (IndexedDB). No data is ever transmitted to remote servers."
+        q: "Q. Is our internal business data protected from leaks?",
+        a: "Completely. Replenish for Work utilizes a purely client-side architecture. Every item, vendor contact, price, and schedule is stored locally in your browser's IndexedDB. No information is ever transmitted to external servers."
       },
       {
-        q: "Q. Can I migrate or back up data across multiple devices?",
-        a: "Yes. You can export and import complete database backups in JSON format with a single click from the Settings menu, allowing seamless backup and migration."
+        q: "Q. Can we backup or transfer data across multiple workstations?",
+        a: "Yes. Use the built-in JSON Backup feature in the header to export or import your inventory records at any time with a single click."
       },
       {
-        q: "Q. Is Replenish for Work truly free forever?",
-        a: "Yes. All features are completely free with no user caps, item limits, or hidden subscriptions."
+        q: "Q. Is it truly free without hidden subscription fees?",
+        a: "Yes, 100% free with unlimited item entries, unlimited history tracking, and full access to all industry presets."
       },
       {
-        q: "Q. What is the difference between standard Replenish and Replenish for Work?",
-        a: "Standard Replenish is designed for household essentials. Replenish for Work adds supplier lead-time buffers, reorder thresholds, industry templates, and storage location tracking."
+        q: "Q. What sets this apart from the standard Replenish app?",
+        a: "The standard Replenish app is tailored for home pantry and bathroom goods. Replenish for Work is engineered for enterprise workflows, including vendor lead times, reorder safety thresholds, industry templates, and storage location tags."
       }
     ],
 
-    ctaTitle: "Eliminate Supply Shortages & Downtime Today.",
-    ctaDesc: "Zero installation hurdles. Launch directly in your browser and start organizing your workplace.",
-    ctaBtn: "Launch Replenish for Work Now",
-    familyTitle: "Looking for Personal Household Use?",
-    familyDesc: "Try standard Replenish for your personal bathroom, kitchen, and household routine supplies.",
-    familyBtn: "View Household Replenish Portal",
+    ctaTitle: "Eliminate supply run-outs and ordering stress today.",
+    ctaDesc: "Zero setup overhead and zero user registration. Launch the free app in your browser right now.",
+    ctaBtn: "Start Replenish for Work",
+    familyTitle: "Looking for Home Supply Management?",
+    familyDesc: "Track household toiletries, pantry spices, and daily sundries with our consumer version, Replenish (Household).",
+    familyBtn: "Visit Replenish Household Portal",
 
-    footerDisclaimer: "Replenish for Work assists organizations in scheduling consumable replacements and timely restocking. All data is kept securely on your local device.",
+    footerDisclaimer: "Replenish for Work is a productivity assistant for managing enterprise and workplace consumable replenishment cycles. All data is stored purely within your local browser storage.",
     privacyTitle: "Privacy Policy",
     termsTitle: "Terms of Service",
     aboutTitle: "About Us",
-    contactTitle: "Contact",
+    contactTitle: "Contact Support",
     guideTitle: "User Guide"
   },
   fr: {
@@ -277,6 +282,8 @@ const LANG_CONFIG = {
     launchEnBtn: "Version anglaise (Gratuit)",
     launchFrTitle: "Replenish for Work (Français)",
     launchFrBtn: "Lancer l'application française (Gratuit)",
+    launchDeTitle: "Replenish for Work (Deutsch)",
+    launchDeBtn: "Deutsche App starten (Kostenlos)",
 
     industriesBadge: "Modèles sectoriels prêts à l'emploi",
     industriesTitle: "Conçu pour tous les environnements professionnels",
@@ -366,6 +373,127 @@ const LANG_CONFIG = {
     aboutTitle: "À propos",
     contactTitle: "Contact",
     guideTitle: "Guide d'utilisation"
+  },
+  de: {
+    code: "de",
+    label: "Deutsch",
+    flag: "🇩🇪",
+    homePath: "/de",
+    privacyPath: "/de/privacy",
+    termsPath: "/de/terms",
+    aboutPath: "/de/about",
+    contactPath: "/de/contact",
+    guidePath: "/de/guide",
+    brandTitle: "Replenish for Work",
+    brandSubtitle: "Verbrauchs- & Wartungszyklen-Manager für Unternehmen",
+    pageTitle: "Replenish for Work Portal - Zyklenmanagement für Betriebs- und Praxisbedarf | 100% Kostenlos & Sicher",
+    pageDesc: "Automatische Berechnung von Austauschterminen und Vorlaufzeiten für Büro, Praxis, Gastronomie und Handwerk. Keine Engpässe mehr, 100% lokale Speicherung.",
+    heroBadge: "Schluss mit Versäumnissen & Materialengpässen",
+    heroTitle: 'Verbrauchsmaterialien & Wartungsintervalle<br><span class="bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 bg-clip-text text-transparent">effizient & vorausschauend steuern.</span>',
+    heroDesc: "Bürobedarf, Praxis- und Hygieneartikel, Gastronomie-Materialien oder Werkstattverschleißteile: Berechnen Sie Wechseldaten automatisch und bestellen Sie dank Lieferzeit-Erinnerung rechtzeitig nach.",
+    navHome: "Startseite",
+    navIndustries: "Branchen",
+    navFeatures: "Vorteile",
+    navFaq: "FAQ",
+    navLaunch: "App starten",
+
+    launchJpTitle: "Replenish for Work (Japanisch)",
+    launchJpBtn: "Japanische Version (Kostenlos)",
+    launchEnTitle: "Replenish for Work (Englisch)",
+    launchEnBtn: "Englische Version (Kostenlos)",
+    launchFrTitle: "Replenish for Work (Französisch)",
+    launchFrBtn: "Französische Version (Kostenlos)",
+    launchDeTitle: "Replenish for Work (Deutsch)",
+    launchDeBtn: "Deutsche App starten (Kostenlos)",
+
+    industriesBadge: "Sofort einsatzbereite Branchen-Vorlagen",
+    industriesTitle: "Maßgeschneidert für jeden Unternehmensbereich",
+    industriesSub: "Übernehmen Sie empfohlene Zyklen und Bedarfslisten mit einem Klick und passen Sie diese flexibel an Ihre Abläufe an.",
+
+    industries: [
+      {
+        icon: "🏢",
+        name: "Büro & Verwaltung",
+        desc: "Druckerpapier, Tonerkartuschen, Aktenvernichter-Öl, Whiteboard-Marker, Wasserspender-Filter, Schreibtisch-Hygiene",
+        tag: "Kosten senken"
+      },
+      {
+        icon: "🏥",
+        name: "Medizin, Praxis & Apotheke",
+        desc: "Untersuchungshandschuhe, Desinfektionsmittel, Sterilisationsbeutel, Einwegspritzen, Absaugschläuche, OP-Masken",
+        tag: "Hygiene & Sicherheit"
+      },
+      {
+        icon: "🍽️",
+        name: "Gastronomie, Cafés & Küche",
+        desc: "Wasserfilter für Kaffeemaschinen, Fettlöser, Flächendesinfektion, Frittieröl-Filter, Küchenrollen, Nitrilhandschuhe",
+        tag: "HACCP-Konformität"
+      },
+      {
+        icon: "💇",
+        name: "Friseur, Kosmetik & Studio",
+        desc: "Einweghandtücher, Färbeumhänge, Einweghandschuhe, Gerätedesinfektion, Ersatzklingen, Wattepads",
+        tag: "Servicequalität"
+      },
+      {
+        icon: "🏭",
+        name: "Handwerk, Werkstatt & Industrie",
+        desc: "Bremsenreiniger, Industrieputztücher, Schleifscheiben, Schutzbrillen, Feinstaubmasken, Schmieröle",
+        tag: "Ausfallzeiten verhindern"
+      },
+      {
+        icon: "🏨",
+        name: "Hotellerie & Beherbergung",
+        desc: "Gäste-Amenities, Housekeeping-Reiniger, Einwegslipper, HEPA-Filter für Luftreiniger, frische Bettwäsche",
+        tag: "Gäste-Zufriedenheit"
+      }
+    ],
+
+    featuresBadge: "Starke Vorteile",
+    featuresTitle: "Warum Unternehmen auf Replenish for Work setzen",
+    feat1Title: "Vorausschauende Erinnerung mit Lieferanten-Vorlaufzeit",
+    feat1Desc: "Erst nachzubestellen, wenn nichts mehr da ist, stoppt den Betriebsablauf. Wir berechnen das optimale Bestelldatum anhand der Lieferfristen.",
+    feat2Title: "100% Lokale & Sichere Speicherung (Kein externer Server)",
+    feat2Desc: "Ihre Materiallisten, Preise, Lieferanten und Notizen verbleiben geschützt im lokalen Speicher Ihres Geräts (IndexedDB). Kein Risiko von Datenlecks.",
+    feat3Title: "PWA-kompatibel & Zuverlässig offline nutzbar",
+    feat3Desc: "Installieren Sie die Anwendung mit einem Klick auf Werkstatt-Tablets oder Smartphones. Funktioniert selbst im Kellerarchiv ohne Internetverbindung.",
+    feat4Title: "100% Kostenlos & Ohne lästige Registrierung",
+    feat4Desc: "Kein Benutzerkonto, kein Login, keine Lizenzgebühren pro Arbeitsplatz. Sofort im Browser einsatzbereit.",
+
+    faqBadge: "FAQ",
+    faqTitle: "Häufig gestellte Fragen",
+    faqs: [
+      {
+        q: "Q. Sind unsere vertraulichen Betriebsdaten vor Dritten geschützt?",
+        a: "Vollständig. Replenish for Work verwendet eine reine Client-Side-Architektur. Alle Artikel, Lieferantendaten, Kosten und Notizen werden ausschließlich in der IndexedDB Ihres Browsers gespeichert. Es findet keinerlei Übertragung an externe Server statt."
+      },
+      {
+        q: "Q. Kann ich Backups erstellen oder Daten auf andere Rechner übertragen?",
+        a: "Ja. Über die Backup-Funktion im Menü können Sie Ihren gesamten Bestand mit einem Klick als JSON-Datei exportieren oder importieren."
+      },
+      {
+        q: "Q. Bleibt die Nutzung wirklich kostenlos ohne versteckte Gebühren?",
+        a: "Ja, zu 100% kostenlos ohne Limit bei der Artikelanzahl, ohne Bezahlmodelle und ohne Abonnements."
+      },
+      {
+        q: "Q. Worin liegt der Unterschied zur Standardversion von Replenish?",
+        a: "Die Standardversion richtet sich an Privathaushalte (Bad, Küche). Replenish for Work bietet gezielte Funktionen für Unternehmen wie Vorlaufzeiten (Lead Time), Mindestbestände, Lagerorte und professionelle Branchenvorlagen."
+      }
+    ],
+
+    ctaTitle: "Beenden Sie Materialengpässe und Bestellstress ab heute.",
+    ctaDesc: "Keine zeitraubende Registrierung oder Installation nötig. Starten Sie die Anwendung direkt und kostenlos im Browser.",
+    ctaBtn: "Replenish for Work starten",
+    familyTitle: "Suchen Sie einen Vorratsmanager für Ihren Haushalt?",
+    familyDesc: "Entdecken Sie die Replenish Standardversion für den täglichen Bedarf in Bad, Küche und Vorratskammer zu Hause.",
+    familyBtn: "Zum Haushalts-Portal von Replenish",
+
+    footerDisclaimer: "Replenish for Work ist ein digitales Werkzeug zur Erfassung und Überwachung von Wechselintervallen und Nachbestellfristen betrieblicher Verbrauchsmaterialien. Daten werden ausschließlich lokal auf Ihrem Gerät gespeichert.",
+    privacyTitle: "Datenschutzerklärung",
+    termsTitle: "Nutzungsbedingungen",
+    aboutTitle: "Über uns",
+    contactTitle: "Kontakt",
+    guideTitle: "Leitfaden"
   }
 };
 
@@ -374,12 +502,14 @@ function renderHeader(lang) {
   const langs = [
     { code: "ja", path: "/", flag: "🇯🇵", label: "JA" },
     { code: "en", path: "/en", flag: "🇺🇸", label: "EN" },
-    { code: "fr", path: "/fr", flag: "🇫🇷", label: "FR" }
+    { code: "fr", path: "/fr", flag: "🇫🇷", label: "FR" },
+    { code: "de", path: "/de", flag: "🇩🇪", label: "DE" }
   ];
 
   let appUrl = URL_RPW_JP;
   if (lang === "en") appUrl = URL_RPW_EN;
   if (lang === "fr") appUrl = URL_RPW_FR;
+  if (lang === "de") appUrl = URL_RPW_DE;
 
   return `
   <header class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-800 text-white">
@@ -456,6 +586,7 @@ function renderFooter(lang) {
             <li><a href="${URL_RPW_JP}" class="hover:text-emerald-400 transition">🇯🇵 Replenish for Work (JP)</a></li>
             <li><a href="${URL_RPW_EN}" class="hover:text-emerald-400 transition">🇺🇸 Replenish for Work (EN)</a></li>
             <li><a href="${URL_RPW_FR}" class="hover:text-emerald-400 transition">🇫🇷 Replenish for Work (FR)</a></li>
+            <li><a href="${URL_RPW_DE}" class="hover:text-emerald-400 transition">🇩🇪 Replenish for Work (DE)</a></li>
             <li class="pt-2 border-t border-slate-800 text-[11px] text-slate-500 uppercase tracking-wider">Household Series</li>
             <li><a href="${URL_RP_PORTAL}" class="hover:text-emerald-400 transition">Replenish Portal (Home)</a></li>
             <li><a href="${URL_RP_JP}" class="hover:text-emerald-400 transition">Replenish Household (JP)</a></li>
@@ -572,44 +703,57 @@ function renderPortalPage(lang) {
         ${cfg.heroDesc}
       </p>
 
-      <!-- Launch Action Cards (3 Languages) -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto mb-12">
+      <!-- Launch Action Cards (4 Languages) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto mb-12">
         <!-- Japanese Edition -->
-        <a href="${URL_RPW_JP}" class="group relative flex flex-col items-center justify-center p-6 rounded-2xl bg-gradient-to-b from-slate-800 to-slate-850 border border-emerald-500/40 hover:border-emerald-400 shadow-xl shadow-emerald-950/50 hover:shadow-emerald-900/40 transition-all hover:-translate-y-1">
+        <a href="${URL_RPW_JP}" class="group relative flex flex-col items-center justify-center p-5 rounded-2xl bg-gradient-to-b from-slate-800 to-slate-850 border border-emerald-500/40 hover:border-emerald-400 shadow-xl shadow-emerald-950/50 hover:shadow-emerald-900/40 transition-all hover:-translate-y-1 text-center">
           <div class="flex items-center gap-2 mb-2">
             <span class="text-2xl">🇯🇵</span>
-            <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">Japonais / Japanese</span>
+            <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">JA / Japanese</span>
           </div>
-          <span class="text-sm sm:text-base font-bold text-white mb-1">${cfg.launchJpTitle}</span>
+          <span class="text-sm font-bold text-white mb-1 line-clamp-1">${cfg.launchJpTitle}</span>
           <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-300 group-hover:text-emerald-200 mt-2">
             <span>${cfg.launchJpBtn}</span>
-            <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+            <svg class="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
           </span>
         </a>
 
         <!-- English Edition -->
-        <a href="${URL_RPW_EN}" class="group relative flex flex-col items-center justify-center p-6 rounded-2xl bg-gradient-to-b from-slate-800 to-slate-850 border border-cyan-500/40 hover:border-cyan-400 shadow-xl shadow-cyan-950/50 hover:shadow-cyan-900/40 transition-all hover:-translate-y-1">
+        <a href="${URL_RPW_EN}" class="group relative flex flex-col items-center justify-center p-5 rounded-2xl bg-gradient-to-b from-slate-800 to-slate-850 border border-cyan-500/40 hover:border-cyan-400 shadow-xl shadow-cyan-950/50 hover:shadow-cyan-900/40 transition-all hover:-translate-y-1 text-center">
           <div class="flex items-center gap-2 mb-2">
             <span class="text-2xl">🇺🇸</span>
-            <span class="text-xs font-bold text-cyan-400 uppercase tracking-wider">Anglais / English</span>
+            <span class="text-xs font-bold text-cyan-400 uppercase tracking-wider">EN / English</span>
           </div>
-          <span class="text-sm sm:text-base font-bold text-white mb-1">${cfg.launchEnTitle}</span>
+          <span class="text-sm font-bold text-white mb-1 line-clamp-1">${cfg.launchEnTitle}</span>
           <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-cyan-300 group-hover:text-cyan-200 mt-2">
             <span>${cfg.launchEnBtn}</span>
-            <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+            <svg class="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
           </span>
         </a>
 
         <!-- French Edition -->
-        <a href="${URL_RPW_FR}" class="group relative flex flex-col items-center justify-center p-6 rounded-2xl bg-gradient-to-b from-slate-800 to-slate-850 border border-indigo-500/40 hover:border-indigo-400 shadow-xl shadow-indigo-950/50 hover:shadow-indigo-900/40 transition-all hover:-translate-y-1">
+        <a href="${URL_RPW_FR}" class="group relative flex flex-col items-center justify-center p-5 rounded-2xl bg-gradient-to-b from-slate-800 to-slate-850 border border-indigo-500/40 hover:border-indigo-400 shadow-xl shadow-indigo-950/50 hover:shadow-indigo-900/40 transition-all hover:-translate-y-1 text-center">
           <div class="flex items-center gap-2 mb-2">
             <span class="text-2xl">🇫🇷</span>
-            <span class="text-xs font-bold text-indigo-400 uppercase tracking-wider">Français / French</span>
+            <span class="text-xs font-bold text-indigo-400 uppercase tracking-wider">FR / Français</span>
           </div>
-          <span class="text-sm sm:text-base font-bold text-white mb-1">${cfg.launchFrTitle}</span>
+          <span class="text-sm font-bold text-white mb-1 line-clamp-1">${cfg.launchFrTitle}</span>
           <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-indigo-300 group-hover:text-indigo-200 mt-2">
             <span>${cfg.launchFrBtn}</span>
-            <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+            <svg class="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+          </span>
+        </a>
+
+        <!-- German Edition -->
+        <a href="${URL_RPW_DE}" class="group relative flex flex-col items-center justify-center p-5 rounded-2xl bg-gradient-to-b from-slate-800 to-slate-850 border border-amber-500/40 hover:border-amber-400 shadow-xl shadow-amber-950/50 hover:shadow-amber-900/40 transition-all hover:-translate-y-1 text-center">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="text-2xl">🇩🇪</span>
+            <span class="text-xs font-bold text-amber-400 uppercase tracking-wider">DE / Deutsch</span>
+          </div>
+          <span class="text-sm font-bold text-white mb-1 line-clamp-1">${cfg.launchDeTitle}</span>
+          <span class="inline-flex items-center gap-1.5 text-xs font-semibold text-amber-300 group-hover:text-amber-200 mt-2">
+            <span>${cfg.launchDeBtn}</span>
+            <svg class="w-3.5 h-3.5 transform group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
           </span>
         </a>
       </div>
@@ -618,19 +762,19 @@ function renderPortalPage(lang) {
       <div class="flex flex-wrap items-center justify-center gap-6 text-xs font-medium text-slate-400">
         <span class="inline-flex items-center gap-1.5">
           <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-          ${lang === "fr" ? "100% Gratuit sans frais" : (lang === "en" ? "100% Free Forever" : "完全無料（課金なし）")}
+          ${lang === "de" ? "100% Kostenlos ohne Abo" : (lang === "fr" ? "100% Gratuit sans frais" : (lang === "en" ? "100% Free Forever" : "完全無料（課金なし）"))}
         </span>
         <span class="inline-flex items-center gap-1.5">
           <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-          ${lang === "fr" ? "Sans inscription" : (lang === "en" ? "No Account Needed" : "登録不要（即日開始）")}
+          ${lang === "de" ? "Ohne Registrierung" : (lang === "fr" ? "Sans inscription" : (lang === "en" ? "No Account Needed" : "登録不要（即日開始）"))}
         </span>
         <span class="inline-flex items-center gap-1.5">
           <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-          ${lang === "fr" ? "Stockage local 100% privé" : (lang === "en" ? "100% Private Local Storage" : "端末内ローカル保存（情報送信ゼロ）")}
+          ${lang === "de" ? "100% Lokaler Datenschutz" : (lang === "fr" ? "Stockage local 100% privé" : (lang === "en" ? "100% Private Local Storage" : "端末内ローカル保存（情報送信ゼロ）"))}
         </span>
         <span class="inline-flex items-center gap-1.5">
           <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-          ${lang === "fr" ? "Prêt PWA & Hors-ligne" : (lang === "en" ? "PWA & Offline Ready" : "PWAオフライン動作対応")}
+          ${lang === "de" ? "PWA & Offline einsatzbereit" : (lang === "fr" ? "Prêt PWA & Hors-ligne" : (lang === "en" ? "PWA & Offline Ready" : "PWAオフライン動作対応"))}
         </span>
       </div>
     </div>
@@ -707,16 +851,16 @@ function renderPortalPage(lang) {
   <!-- FAQ SECTION -->
   <section id="faq" class="py-20 bg-slate-950 border-t border-slate-800">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-14">
-        <span class="text-xs font-bold uppercase tracking-wider text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-full border border-cyan-500/20">${cfg.faqBadge}</span>
-        <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-4 tracking-tight">${cfg.faqTitle}</h2>
+      <div class="text-center mb-16">
+        <span class="text-xs font-bold uppercase tracking-wider text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-full border border-emerald-500/20">${cfg.faqBadge}</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-4 mb-3 tracking-tight">${cfg.faqTitle}</h2>
       </div>
 
-      <div class="space-y-4">
-        ${cfg.faqs.map(faq => `
-          <div class="p-6 rounded-2xl bg-slate-900/90 border border-slate-800">
-            <h3 class="text-base font-bold text-white mb-2">${faq.q}</h3>
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">${faq.a}</p>
+      <div class="space-y-6">
+        ${cfg.faqs.map(item => `
+          <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800">
+            <h3 class="text-base font-bold text-white mb-2">${item.q}</h3>
+            <p class="text-sm text-slate-400 leading-relaxed">${item.a}</p>
           </div>
         `).join("")}
       </div>
@@ -724,28 +868,36 @@ function renderPortalPage(lang) {
   </section>
 
   <!-- CTA SECTION -->
-  <section class="py-20 bg-gradient-to-t from-emerald-950/40 via-slate-900 to-slate-950 border-t border-slate-800 text-center relative overflow-hidden">
+  <section class="py-20 bg-gradient-to-b from-slate-900 to-slate-950 border-t border-slate-800 text-center relative overflow-hidden">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <h2 class="text-2xl sm:text-4xl font-extrabold text-white mb-4 tracking-tight">${cfg.ctaTitle}</h2>
-      <p class="text-sm sm:text-base text-slate-300 max-w-xl mx-auto mb-8">${cfg.ctaDesc}</p>
-
-      <div class="flex flex-wrap items-center justify-center gap-4 mb-12">
-        <a href="${URL_RPW_JP}" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-sm shadow-lg shadow-emerald-900/50 transition">
-          🇯🇵 ${cfg.launchJpBtn}
+      <h2 class="text-3xl sm:text-5xl font-black text-white tracking-tight mb-4 max-w-2xl mx-auto">
+        ${cfg.ctaTitle}
+      </h2>
+      <p class="text-sm sm:text-base text-slate-400 max-w-xl mx-auto mb-8">
+        ${cfg.ctaDesc}
+      </p>
+      
+      <div class="flex flex-wrap items-center justify-center gap-4 mb-14">
+        <a href="${URL_RPW_JP}" class="px-6 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-sm shadow-lg shadow-emerald-950/60 transition">
+          🇯🇵 日本語版を開く
         </a>
-        <a href="${URL_RPW_EN}" class="px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-cyan-300 font-bold text-sm transition">
-          🇺🇸 ${cfg.launchEnBtn}
+        <a href="${URL_RPW_EN}" class="px-6 py-3.5 rounded-xl bg-cyan-600 hover:bg-cyan-500 text-white font-bold text-sm shadow-lg shadow-cyan-950/60 transition">
+          🇺🇸 English Edition
         </a>
-        <a href="${URL_RPW_FR}" class="px-6 py-3.5 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-indigo-300 font-bold text-sm transition">
-          🇫🇷 ${cfg.launchFrBtn}
+        <a href="${URL_RPW_FR}" class="px-6 py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-sm shadow-lg shadow-indigo-950/60 transition">
+          🇫🇷 Version Française
+        </a>
+        <a href="${URL_RPW_DE}" class="px-6 py-3.5 rounded-xl bg-amber-600 hover:bg-amber-500 text-white font-bold text-sm shadow-lg shadow-amber-950/60 transition">
+          🇩🇪 Deutsche Version
         </a>
       </div>
 
-      <!-- Household Link Banner -->
-      <div class="p-6 rounded-2xl bg-slate-900/90 border border-slate-800 max-w-xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-left">
+      <!-- Household Family Link -->
+      <div class="p-6 rounded-2xl bg-slate-950/70 border border-slate-800/80 max-w-2xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-left">
         <div>
-          <div class="text-xs font-bold text-slate-200">${cfg.familyTitle}</div>
-          <div class="text-[11px] text-slate-400 mt-0.5">${cfg.familyDesc}</div>
+          <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider block mb-1">Household Edition</span>
+          <h4 class="text-sm font-bold text-white mb-1">${cfg.familyTitle}</h4>
+          <p class="text-xs text-slate-400">${cfg.familyDesc}</p>
         </div>
         <a href="${URL_RP_PORTAL}" class="whitespace-nowrap px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-emerald-400 text-xs font-bold border border-slate-700 transition">
           ${cfg.familyBtn} &rarr;
@@ -764,6 +916,7 @@ function renderLegalPage(type, lang) {
   const cfg = LANG_CONFIG[lang] || LANG_CONFIG.ja;
   const isJa = lang === "ja";
   const isFr = lang === "fr";
+  const isDe = lang === "de";
 
   let titles = {};
   if (isJa) {
@@ -781,6 +934,14 @@ function renderLegalPage(type, lang) {
       about: "À propos",
       contact: "Contact",
       guide: "Guide d'utilisation"
+    };
+  } else if (isDe) {
+    titles = {
+      privacy: "Datenschutzerklärung",
+      terms: "Nutzungsbedingungen & Haftungsausschluss",
+      about: "Impressum & Über uns",
+      contact: "Kontakt",
+      guide: "Bedienungsanleitung & Leitfaden"
     };
   } else {
     titles = {
@@ -829,6 +990,23 @@ function renderLegalPage(type, lang) {
         <h2 class="text-xl font-bold text-white mb-3">3. Statistiques & Mesure d'audience</h2>
         <p class="text-sm text-slate-300 leading-relaxed mb-6">
           Des métriques de trafic anonymisées (ex. Cloudflare Web Analytics) peuvent être employées dans le seul but de garantir la performance et la fiabilité du service, sans aucune collecte de données nominatives.
+        </p>
+      `;
+    } else if (isDe) {
+      bodyContent = `
+        <h2 class="text-xl font-bold text-white mb-3">1. Datenschutz & 100% lokale Speicherung</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Replenish for Work wurde nach strengen Privacy-First-Standards entwickelt. Sämtliche erfassten Artikel, Wechselzyklen, Lieferantenangaben, Lagerorte und Notizen verbleiben ausschließlich in der IndexedDB Ihres lokalen Browsers. Es erfolgt keinerlei Übertragung an externe Server.
+        </p>
+
+        <h2 class="text-xl font-bold text-white mb-3">2. Werbung & Cookies (Google AdSense etc.)</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Wir binden unter Umständen Werbepartner (wie Google AdSense) ein. Diese Dienste können Cookies verwenden, um relevante Anzeigen bereitzustellen. Sie können Cookies in den Einstellungen Ihres Browsers jederzeit deaktivieren.
+        </p>
+
+        <h2 class="text-xl font-bold text-white mb-3">3. Web-Analyse</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Zur Sicherstellung von Stabilität und Geschwindigkeit können anonymisierte Metriken (z. B. Cloudflare Web Analytics) verwendet werden. Es werden keinerlei personenbezogene Daten erhoben.
         </p>
       `;
     } else {
@@ -884,6 +1062,23 @@ function renderLegalPage(type, lang) {
           L'éditeur se réserve le droit de mettre à jour ou d'interrompre l'application à tout moment sans préavis.
         </p>
       `;
+    } else if (isDe) {
+      bodyContent = `
+        <h2 class="text-xl font-bold text-white mb-3">1. Nutzungsbedingungen</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Replenish for Work ist ein kostenloses Hilfsmittel zur Überwachung und Planung von Austauschzyklen und Beschaffungsfristen betrieblicher Verbrauchsgüter. Die Nutzung erfolgt auf eigene Verantwortung.
+        </p>
+
+        <h2 class="text-xl font-bold text-white mb-3">2. Haftungsausschluss</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Der Betreiber übernimmt keine Haftung für Betriebsunterbrechungen, Lieferverzögerungen, Lieferengpässe oder Datenverluste (z. B. durch Löschen des Browser-Caches). Es wird empfohlen, regelmäßige JSON-Backups zu erstellen.
+        </p>
+
+        <h2 class="text-xl font-bold text-white mb-3">3. Änderungen des Dienstes</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Der Betreiber behält sich das Recht vor, das Angebot jederzeit ohne vorherige Ankündigung anzupassen oder einzustellen.
+        </p>
+      `;
     } else {
       bodyContent = `
         <h2 class="text-xl font-bold text-white mb-3">1. Terms of Use</h2>
@@ -929,6 +1124,19 @@ function renderLegalPage(type, lang) {
           <div class="flex"><span class="w-36 text-slate-400 font-bold">Tarification:</span><span class="text-white">100% Gratuit (Sans compte)</span></div>
         </div>
       `;
+    } else if (isDe) {
+      bodyContent = `
+        <h2 class="text-xl font-bold text-white mb-3">Über Replenish for Work</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Replenish for Work ist eine Web-Anwendung für Praxen, Büros, Gastronomiebetriebe und Werkstätten, um Austauschzeitpunkte und Beschaffungsfristen wichtiger Verbrauchsgüter vorausschauend zu koordinieren. Dank der rein lokalen Architektur bleiben Ihre Betriebsdaten stets vertraulich.
+        </p>
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-3 text-xs sm:text-sm">
+          <div class="flex"><span class="w-36 text-slate-400 font-bold">Anwendung:</span><span class="text-white">Replenish for Work</span></div>
+          <div class="flex"><span class="w-36 text-slate-400 font-bold">Domain:</span><span class="text-emerald-400 font-mono">rpw.easy-log.app</span></div>
+          <div class="flex"><span class="w-36 text-slate-400 font-bold">Betreiber:</span><span class="text-white">stoooone.studio</span></div>
+          <div class="flex"><span class="w-36 text-slate-400 font-bold">Preise:</span><span class="text-white">100% Kostenlos (Ohne Registrierung)</span></div>
+        </div>
+      `;
     } else {
       bodyContent = `
         <h2 class="text-xl font-bold text-white mb-3">About Replenish for Work</h2>
@@ -963,6 +1171,17 @@ function renderLegalPage(type, lang) {
         </p>
         <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 text-center">
           <span class="text-xs text-slate-400 block mb-2">Adresse de contact</span>
+          <a href="mailto:stoooone.studio@gmail.com" class="text-base sm:text-lg font-bold text-emerald-400 hover:underline font-mono">stoooone.studio@gmail.com</a>
+        </div>
+      `;
+    } else if (isDe) {
+      bodyContent = `
+        <h2 class="text-xl font-bold text-white mb-3">Kontakt & Support</h2>
+        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+          Bei Feedback, Fragen, Verbesserungsvorschlägen oder Fehlermeldungen wenden Sie sich bitte per E-Mail an uns:
+        </p>
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 text-center">
+          <span class="text-xs text-slate-400 block mb-2">Support-Adresse</span>
           <a href="mailto:stoooone.studio@gmail.com" class="text-base sm:text-lg font-bold text-emerald-400 hover:underline font-mono">stoooone.studio@gmail.com</a>
         </div>
       `;
@@ -1020,6 +1239,28 @@ function renderLegalPage(type, lang) {
           <div class="p-5 rounded-xl bg-slate-900 border border-slate-800">
             <h3 class="text-base font-bold text-emerald-400 mb-2">Étape 4 : Ajouter à l'écran d'accueil (PWA)</h3>
             <p>Depuis le menu de votre navigateur mobile ou tablette, choisissez « Ajouter à l'écran d'accueil » pour l'utiliser en plein écran comme une application native.</p>
+          </div>
+        </div>
+      `;
+    } else if (isDe) {
+      bodyContent = `
+        <h2 class="text-xl font-bold text-white mb-3">Erste Schritte mit Replenish for Work</h2>
+        <div class="space-y-6 text-sm text-slate-300 leading-relaxed">
+          <div class="p-5 rounded-xl bg-slate-900 border border-slate-800">
+            <h3 class="text-base font-bold text-emerald-400 mb-2">Schritt 1: Artikel erfassen</h3>
+            <p>Klicken Sie auf „Artikel hinzufügen“ und geben Sie Name, Wechselzyklus (Tage, Wochen, Monate) sowie Einsatzdatum ein. Alternativ wählen Sie eine fertige Branchen-Vorlage.</p>
+          </div>
+          <div class="p-5 rounded-xl bg-slate-900 border border-slate-800">
+            <h3 class="text-base font-bold text-emerald-400 mb-2">Schritt 2: Lieferanten-Vorlaufzeit (Lead-Time) festlegen</h3>
+            <p>Tragen Sie die durchschnittliche Lieferzeit ein. Die App erinnert Sie rechtzeitig vor dem Wechseltermin an die Nachbestellung.</p>
+          </div>
+          <div class="p-5 rounded-xl bg-slate-900 border border-slate-800">
+            <h3 class="text-base font-bold text-emerald-400 mb-2">Schritt 3: Schnellerneuerung per Klick</h3>
+            <p>Sobald ein Artikel erneuert wurde, genügt ein Klick auf „Erneuern“. Das nächste Zieldatum wird automatisch berechnet und in der Historie protokolliert.</p>
+          </div>
+          <div class="p-5 rounded-xl bg-slate-900 border border-slate-800">
+            <h3 class="text-base font-bold text-emerald-400 mb-2">Schritt 4: Zum Startbildschirm hinzufügen (PWA)</h3>
+            <p>Über das Browsermenü auf Smartphone oder Tablet wählen Sie „Zum Startbildschirm hinzufügen“, um die Anwendung wie eine native App zu starten.</p>
           </div>
         </div>
       `;
@@ -1095,12 +1336,16 @@ export default {
       }
     }
 
-    // Determine language (ja, en, fr)
+    // Determine language (ja, en, fr, de)
     let lang = "ja";
-    if (pathname === "/fr" || pathname.startsWith("/fr/")) {
+    if (pathname === "/de" || pathname.startsWith("/de/")) {
+      lang = "de";
+    } else if (pathname === "/fr" || pathname.startsWith("/fr/")) {
       lang = "fr";
     } else if (pathname === "/en" || pathname.startsWith("/en/")) {
       lang = "en";
+    } else if (url.searchParams.get("lang") === "de") {
+      lang = "de";
     } else if (url.searchParams.get("lang") === "fr") {
       lang = "fr";
     } else if (url.searchParams.get("lang") === "en") {
@@ -1109,7 +1354,11 @@ export default {
 
     // Normalize route path without language prefix
     let cleanPath = pathname;
-    if (cleanPath.startsWith("/fr/")) {
+    if (cleanPath.startsWith("/de/")) {
+      cleanPath = "/" + cleanPath.slice(4);
+    } else if (cleanPath === "/de") {
+      cleanPath = "/";
+    } else if (cleanPath.startsWith("/fr/")) {
       cleanPath = "/" + cleanPath.slice(4);
     } else if (cleanPath === "/fr") {
       cleanPath = "/";
